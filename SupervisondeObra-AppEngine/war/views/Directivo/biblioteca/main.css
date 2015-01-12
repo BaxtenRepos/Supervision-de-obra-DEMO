@@ -1,0 +1,163 @@
+/* CSS */
+body{
+	/*padding: 100px;*/
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+/*h1{
+	font-size: 64px;
+}*/
+
+.slider{
+	/*background: url('../img/grid.png') -25px -25px;*/
+	height: 80px; /*valor para el tamanho del slider*/
+	position: relative;
+	width: 200px; /*valor para el tamanho del slider*/
+}
+
+.slider > .emptyprogress{
+	background: #97d9fb;
+	border: 3px solid white;
+	/*cursor: pointer;*/
+	border-radius: 10px;
+	height: 40%;
+	/*top:25%;*/
+	position: absolute;
+	width: 100%;
+
+	-webkit-box-shadow: 1px 1px 3px 0px #ccc;
+	box-shadow: 1px 1px 3px 0px #ccc;
+}
+
+.slider > .progress{
+	background: #14aaf6;
+	border: 3px solid white;
+	/*cursor: pointer;*/
+	border-radius: 10px;
+	height: 40%;
+	/*top:25%;*/
+	position: absolute;
+	width: 0%;
+
+	-webkit-box-shadow: 1px 1px 3px 0px #ccc;
+	box-shadow: 1px 1px 3px 0px #ccc;
+}
+
+.slider > .indicator{
+	/*background: url('../biblioteca/pointer.png') no-repeat;*/
+	background: white;
+	border-radius: 50px;
+	/*border: 1px solid red;*/
+	/*cursor: move;*/
+	height: 40%;
+	margin: 2px auto auto -10px;
+	left: 0%;
+	position: absolute;
+	width:20px;
+}
+
+.info, .info> label {
+	font-family: 'Julius Sans One', sans-serif;
+	/*color: red;*/
+	/*font-size : 20 ;*/
+}
+
+.info, .info> label > input{
+	font-family: 'Julius Sans One', sans-serif;
+	color: black;
+}
+
+.info{
+	/*font-size: 32px;*/
+	font-weight: bold;
+	/*margin-top: 30px;*/
+	width: auto;
+}
+
+.info> label > input{
+	border: none;
+	/*font-size: 20px;*/
+	/*width: 250px;*/
+}
+/*slide 2*/
+.slider2{
+	/*background: url('../img/grid.png') -25px -25px;*/
+	height: 80px; /*valor para el tamanho del slider*/
+	position: relative;
+	width: 200px; /*valor para el tamanho del slider*/
+}
+
+.slider2 > .emptyprogress2{
+	background: #97d9fb;
+	border: 3px solid white;
+	/*cursor: pointer;*/
+	border-radius: 10px;
+	height: 40%;
+	/*top:25%;*/
+	position: absolute;
+	width: 100%;
+
+	-webkit-box-shadow: 1px 1px 3px 0px #ccc;
+	box-shadow: 1px 1px 3px 0px #ccc;
+}
+
+.slider2 > .progress2{
+	background: #14aaf6;
+	border: 3px solid white;
+	/*cursor: pointer;*/
+	border-radius: 10px;
+	height: 40%;
+	/*top:25%;*/
+	position: absolute;
+	width: 0%;
+
+	-webkit-box-shadow: 1px 1px 3px 0px #ccc;
+	box-shadow: 1px 1px 3px 0px #ccc;
+}
+
+.slider2 > .indicator2{
+	/*background: url('../biblioteca/pointer.png') no-repeat;*/
+	background: white;
+	border-radius: 50px;
+	/*border: 1px solid red;*/
+	/*cursor: move;*/
+	height: 40%;
+	margin: 2px auto auto -10px;
+	left: 0%;
+	position: absolute;
+	width:20px;
+}
+
+.info2, .info2> label {
+	font-family: 'Julius Sans One', sans-serif;
+	/*color: red;*/
+	/*font-size : 20 ;*/
+}
+
+.info2, .info2> label > input{
+	font-family: 'Julius Sans One', sans-serif;
+	color: black;
+}
+
+.info2{
+	/*font-size: 32px;*/
+	font-weight: bold;
+	/*margin-top: 30px;*/
+	width: auto;
+}
+
+.info2> label > input{
+	border: none;
+	/*font-size: 20px;*/
+	/*width: 250px;*/
+}
+
+
+
+
+
+
+
+
+
+

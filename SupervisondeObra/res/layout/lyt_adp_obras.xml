@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="0.17"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txv_porctAvanFisico"
+                    style="@style/txv_obra_porcentaje"
+                    android:layout_width="52dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.58"
+                    android:text="100 %" />
+
+                <TextView
+                    android:id="@+id/txv_AvanFisico"
+                     style="@style/txv_obra_porcentaje_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/str_frag_obras_fisico_title" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.17"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txv_porctAvanFinanciero"
+                    style="@style/txv_obra_porcentaje"
+                    android:layout_width="52dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.58"
+                    android:text="100 %" />
+
+                <TextView
+                    android:id="@+id/txv_AvanFinanciero"
+                    style="@style/txv_obra_porcentaje_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/str_frag_obras_financiero_title" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.57"
+                android:focusable="true"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txv_NombreObra"
+                    style="@style/txv_obra_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dragado de Azolve y Rectificación de la laguna de regulación Churubusco, Dren de Interconexión, den Xochiaca de la estructura de control a dren General del Valle y Construcción de la estructura de control."
+                    android:maxLength="100" />
+
+                <TextView
+                    android:id="@+id/txv_EmpresaContra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="left"
+                    android:text="Empresa Contratista"
+                    android:textSize="12dp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/txv_SuperEncargado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="left"
+                    android:text="SuperIntendente"
+                    android:textSize="14dp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txv_porctDesvio"
+                    style="@style/txv_obra_porcentaje_desvio"
+                    android:layout_width="52dp"
+                    android:layout_height="match_parent"
+                    android:text="100 %" />
+
+                <TextView
+                    android:id="@+id/txv_Desvio"
+                    style="@style/txv_obra_porcentaje_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/str_frag_obras_limite_title"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

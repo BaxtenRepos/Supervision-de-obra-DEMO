@@ -1,0 +1,26 @@
+<resources>
+   
+    <color name="grid_state_pressed">#1Affffff</color>
+    <color name="grid_state_focused">#80000000</color>
+    
+    <!-- Copiados de Previo -->
+    <color name="red">#ffff0000</color>
+    <color name="blanco">#ffffffff</color>
+    <color name="negro">#000000</color>
+    <color name="gris">#888888</color>
+    <color name="azul">#3262A2</color>
+    <color name="fondo">#f5f5f5</color>
+    <color name="fondo_header">#EFEFEF</color> <!-- EFEFEF 3262A2 -->
+    <color name="fondo_body">#DBDBDA</color>
+    <color name="verde_botones">#3262A2</color> <!-- AEC253 -->
+    <color name="fondo_textheadertitleanteior">#6CBD57</color>
+
+    <!-- Titulo de la tabla informacion obra -->
+    <color name="color_inicio_info_obra">#459EDB</color>
+    <color name="color_fin_info_obra">#2B5A9E</color>
+    
+    <!-- Items de la tabla de informacion de Obra -->
+    <color name="color_inicio_items_info_obra">#E4E4E4</color>
+    <color name="color_fin_items_info_obra">#979797</color>
+    
+</resources>

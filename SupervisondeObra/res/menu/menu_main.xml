@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--  <item
+        android:id="@+id/menu_buscar_conceptos"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/ic_action_search"
+        android:showAsAction="always"
+        android:title="@string/str_menu_buscar_conceptos"
+        android:visible="false"/>-->
+    <!--  <item
+        android:id="@+id/menu_refresh"
+        android:icon="@drawable/ic_action_refresh"
+        android:showAsAction="always"
+        android:title="@string/str_menu_refresh"
+        android:visible="false"/> -->
+   <!-- <item
+        android:id="@+id/menu_buscar_obras"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/ic_action_search"
+        android:showAsAction="always"
+        android:title="@string/str_menu_buscar_obras"
+        android:visible="false"/> 
+    <item
+        android:id="@+id/menu_minutas"
+        android:icon="@drawable/ic_action_new_event"
+        android:showAsAction="ifRoom"
+        android:title="@string/str_menu_minutas"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menu_ubicacion"
+        android:icon="@drawable/ic_action_map"
+        android:showAsAction="never"
+        android:title="@string/str_menu_ubicacion_obra"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menu_directorio"
+        android:icon="@drawable/ic_action_group"
+        android:showAsAction="never"
+        android:title="@string/str_menu_directorio"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menu_agregar_reporte_maquinaria"
+        android:icon="@drawable/ic_action_new"
+        android:showAsAction="ifRoom"
+        android:title="@string/str_menu_maquinaria"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menu_agregar_reporte_personal"
+        android:icon="@drawable/ic_action_new"
+        android:showAsAction="ifRoom"
+        android:title="@string/str_menu_personal"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menu_agregar_notas"
+        android:icon="@drawable/ic_action_new"
+        android:showAsAction="always"
+        android:title="@string/str_menu_notas"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menu_agregar_estimacion"
+        android:icon="@drawable/ic_action_new"
+        android:showAsAction="always"
+        android:title="@string/str_menu_estimacion_obra"
+        android:visible="false"/>
+    <item
+        android:id="@+id/menu_act_galeria_minuta"
+        android:icon="@drawable/ic_drawer"
+        android:showAsAction="never"
+        android:title="@string/str_menu_ver_galeria_minutas"
+        android:visible="false" />
+
+    <item 
+        android:id="@+id/menu_ver_documentos"
+        android:showAsAction="never"
+        android:title="@string/str_menu_ver_documentos"
+        android:visible="false" />-->
+    
+</menu>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+   
+    <!-- Opcioes agregar reporte -->
+    <string-array name="opciones_agragar_reporte">
+        <item>Maquinaria y Equipo</item>
+        <item>Personal</item>
+        <item>Notas</item>
+        <item>Estimación</item>
+    </string-array>
+    
+    <!-- Opciones Obra -->
+    <string-array name="opciones_obra">
+        <item>Tomar Minuta</item>
+        <item>Subir Documento</item>
+    </string-array>
+    
+    <!-- Opciones Evidencia -->
+    <string-array name="evidencia_opciones">
+        <item>Fotografía</item>
+        <item>Video</item>
+    </string-array>
+    
+	<!-- Opciones del menú -->
+    <string-array name="menu_cao_array">
+        <item>Mis Obras</item>
+        <item>Calendar</item>
+        <item>Sincronizar Inf.</item>
+       <!--   <item>Configuraciones</item> -->
+        <item>Ayuda</item>
+        <item>Acerca de</item>
+        <item>Cerrar Sesión</item>
+    </string-array>
+    
+    <!-- Opciones Pager Galerias -->
+    <string-array name="str_array_pager_galerias_titles">
+        <item>Evidencia</item>
+        <item>Minutas</item>
+    </string-array>
+    
+    <!-- Opciones Pager Historial -->
+    <string-array name="str_array_pager_historial_titles">
+        <item>Avances</item>
+        <item>Aditivas / Deductivas</item>
+    </string-array>
+    
+    <!-- Opciones del los Tabs la Obra -->
+    <string-array name="obra_opciones">
+        <item>Conceptos</item>
+        <item>Avance</item>
+        <item>Información</item>
+        <item>Estimación</item>
+        <item>Maquinaria</item>
+        <item>Personal</item>
+        <item>Notas</item>
+    </string-array>
+    
+    <!-- Preferencias de Red -->
+    <string-array name="listArray">
+        <item>Solo cuando exista una red Wi-Fi</item>
+        <item>Cualquier red</item>
+    </string-array>
+    <string-array name="listValues">
+        <item>Wi-Fi</item>
+        <item>Any</item>
+    </string-array>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frm_lyt_avance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+            <TextView
+                android:id="@+id/txv_frag_avance_tendencia_titulo"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="@string/str_frag_avance_tendencia_titulo"
+            	android:textStyle="bold" />
+            
+            <TextView
+                android:id="@+id/txv_frag_avance_tendencia"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="@string/str_frag_avance_tendencia_valor"
+            	android:textStyle="bold" />
+            
+        </LinearLayout>
+
+        <com.androidplot.xy.XYPlot
+            android:id="@+id/xyRegionExamplePlot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            androidPlot.domainLabel="Dias"
+            androidPlot.domainLabelWidget.labelPaint.textSize="@dimen/domain_label_font_size"
+            androidPlot.graphWidget.domainLabelPaint.textSize="@dimen/domain_tick_label_font_size"
+            androidPlot.graphWidget.domainOriginLabelPaint.textSize="@dimen/domain_tick_label_font_size"
+            androidPlot.graphWidget.marginBottom="25dp"
+            androidPlot.graphWidget.marginLeft="35dp"
+            androidPlot.graphWidget.marginRight="10dp"
+            androidPlot.graphWidget.marginTop="20dp"
+            androidPlot.graphWidget.rangeLabelPaint.textSize="@dimen/range_tick_label_font_size"
+            androidPlot.graphWidget.rangeOriginLabelPaint.textSize="@dimen/range_tick_label_font_size"
+            androidPlot.legendWidget.heightMetric.value="40dp"
+            androidPlot.legendWidget.iconSizeMetrics.heightMetric.value="15dp"
+            androidPlot.legendWidget.iconSizeMetrics.widthMetric.value="15dp"
+            androidPlot.legendWidget.textPaint.textSize="12dp"
+            androidPlot.legendWidget.widthMetric.value="40dp"
+            androidPlot.rangeLabel="Cantidad de Avance"
+            androidPlot.rangeLabelWidget.labelPaint.textSize="@dimen/range_label_font_size"
+            androidPlot.title="Avance Físico"
+            androidPlot.titleWidget.labelPaint.textSize="@dimen/title_font_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/fisicoCheckBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Físico" />
+
+            <CheckBox
+                android:id="@+id/financieroCheckBox"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Financiero" />
+
+            
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            
+        <CheckBox android:id="@+id/realCheckBox"
+                  android:text="Real"
+                  android:checked="true"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"/>
+        <CheckBox android:id="@+id/programadoCheckBox"
+                  android:text="Programado"
+                  android:checked="true"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"/>
+        <!--  <CheckBox android:id="@+id/tendenciaCheckBox"
+                  android:text="Tendencia"
+                  android:checked="true"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"/> -->
+        
+    </LinearLayout>
+	
+    </LinearLayout>
+
+</FrameLayout>

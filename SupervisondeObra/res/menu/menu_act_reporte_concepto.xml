@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+     
+     <!-- <item 
+         android:id="@+id/menu_act_tomar_evidencia"
+         android:icon="@drawable/ic_action_camera"
+         android:showAsAction="never"
+         android:title="@string/str_menu_tomar_evidencia"
+         android:visible="true" />
+     
+     <item 
+         android:id="@+id/menu_act_galeria"
+         android:icon="@drawable/ic_drawer"
+         android:showAsAction="never"
+         android:title="@string/str_menu_ver_galeria_evidencia" />
+         -->
+
+</menu>

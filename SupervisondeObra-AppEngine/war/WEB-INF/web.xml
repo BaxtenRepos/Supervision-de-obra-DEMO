@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	<servlet>
+		<servlet-name>SystemServiceServlet</servlet-name>
+		<servlet-class>com.google.api.server.spi.SystemServiceServlet</servlet-class>
+		<init-param>
+			<param-name>services</param-name>
+		  	<param-value>com.csgit.cao.model.Aditivas_DeductivasEndpoint,com.csgit.cao.model.Avance_FinancieroEndpoint,com.csgit.cao.model.Avance_FisicoEndpoint,com.csgit.cao.model.Cat_ContactosEndpoint,com.csgit.cao.model.Cat_PersonalEndpoint,com.csgit.cao.model.Cat_Tipo_EmpresaEndpoint,com.csgit.cao.model.Cat_Tipo_MaquinariaEndpoint,com.csgit.cao.model.Cat_Tipo_PresonaEndpoint,com.csgit.cao.model.ConceptoEndpoint,com.csgit.cao.model.DeviceInfoEndpoint,com.csgit.cao.model.Directivo_ProyectoEndpoint,com.csgit.cao.model.DirectorioEndpoint,com.csgit.cao.model.EmpresaEndpoint,com.csgit.cao.model.EstimacionEndpoint,com.csgit.cao.model.MaquinariaEndpoint,com.csgit.cao.model.MessageEndpoint,com.csgit.cao.model.MultimediaEndpoint,com.csgit.cao.model.NotasEndpoint,com.csgit.cao.model.ObraEndpoint,com.csgit.cao.model.Org_GoubernamentalEndpoint,com.csgit.cao.model.PersonaEndpoint,com.csgit.cao.model.ProgramaEndpoint,com.csgit.cao.model.ProyectoDelDirectivoEndpoint,com.csgit.cao.model.ProyectoEndpoint,com.csgit.cao.model.PushEndpoint,com.csgit.cao.model.Ref_calendarizacionEndpoint,com.csgit.cao.model.RepMaquinariaCatMaquinariaEndpoint,com.csgit.cao.model.RepoPersonalCatPersonalEndpoint,com.csgit.cao.model.ReporteDiarioEndpoint,com.csgit.cao.model.ReportsmodelEndpoint,com.csgit.cao.model.SincronizacionEndpoint,com.csgit.cao.model.UbicacionesEndpoint,com.csgit.cao.model.UsuarioEndpoint,com.csgit.cao.model.XmppEndpoint</param-value>
+
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SystemServiceServlet</servlet-name>
+		<url-pattern>/_ah/spi/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Altas</servlet-name>
+		<servlet-class>com.csgit.cao.Altas</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Altas</servlet-name>
+		<url-pattern>/Altas.jsp</url-pattern>
+	</servlet-mapping>
+	  <servlet>
+    <servlet-name>Upload</servlet-name>
+    <servlet-class>com.csgit.cao.Upload</servlet-class>
+  </servlet>
+    <servlet>
+    <servlet-name>Excel</servlet-name>
+    <servlet-class>com.csgit.cao.Excel</servlet-class>
+  </servlet>
+      <servlet>
+          <servlet-name>AndroidServeURL</servlet-name>
+          <servlet-class>com.csgit.cao.AndroidServeURL</servlet-class>
+      </servlet>
+  	  <servlet>
+    <servlet-name>Demo_MVC</servlet-name>
+    <servlet-class>prueba_paquete.Demo_MVC</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Serve</servlet-name>
+    <servlet-class>com.csgit.cao.Serve</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>AltaProyecto</servlet-name>
+    <servlet-class>com.csgit.cao.AltaProyecto</servlet-class>
+  </servlet>
+      <servlet>
+    <servlet-name>AltaEmpresa</servlet-name>
+    <servlet-class>com.csgit.cao.AltaEmpresa</servlet-class>
+  </servlet>
+    <servlet>
+    <servlet-name>AltaObra</servlet-name>
+    <servlet-class>com.csgit.cao.AltaObra</servlet-class>
+  </servlet>
+     <servlet>
+    <servlet-name>AltaConcepto</servlet-name>
+    <servlet-class>com.csgit.cao.Altaconcepto</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>AltaUsuario</servlet-name>
+    <servlet-class>com.csgit.cao.AltaUsuario</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AltaCatPersona</servlet-name>
+    <servlet-class>com.csgit.cao.AltaCatPersona</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>UploadMaquinaria</servlet-name>
+    <servlet-class>com.csgit.cao.UploadMaquinaria</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>AltaPersonal</servlet-name>
+    <servlet-class>com.csgit.cao.AltaPersonal</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AltaCatMaquinaria</servlet-name>
+    <servlet-class>com.csgit.cao.AltaCatMaquinaria</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>EditPersonal</servlet-name>
+    <servlet-class>com.csgit.cao.EditPersonal</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>EditPersona</servlet-name>
+    <servlet-class>com.csgit.cao.EditPersona</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>EditProyecto</servlet-name>
+    <servlet-class>com.csgit.cao.EditProyecto</servlet-class>
+  </servlet>
+
+ 
+   <servlet>
+    <servlet-name>DirectorioProyecto</servlet-name>
+    <servlet-class>com.csgit.cao.DirectorioProyecto</servlet-class>
+    </servlet>
+
+      <servlet>
+    <servlet-name>DirectorioObra</servlet-name>
+    <servlet-class>com.csgit.cao.DirectorioObra</servlet-class>
+ </servlet>
+  <servlet>
+    <servlet-name>EditUsuario</servlet-name>
+    <servlet-class>com.csgit.cao.EditUsuario</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>EditConcepto</servlet-name>
+    <servlet-class>com.csgit.cao.EditConcepto</servlet-class>
+
+  </servlet>
+  
+   <servlet>
+    <servlet-name>EditObra</servlet-name>
+    <servlet-class>com.csgit.cao.EditObra</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+    <servlet-name>GetPuntos</servlet-name>
+    <servlet-class>com.csgit.cao.GetPuntos</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>EditEmpresa</servlet-name>
+    <servlet-class>com.csgit.cao.EditEmpresa</servlet-class>
+  </servlet>
+  
+   <servlet>
+    <servlet-name>EditDirectorio</servlet-name>
+    <servlet-class>com.csgit.cao.EditDirectorio</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PruebaProyecto</servlet-name>
+    <servlet-class>com.csgit.cao.PruebaProyecto</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>ListaPersonas</servlet-name>
+    <servlet-class>com.csgit.cao.ListaPersonas</servlet-class>
+  </servlet> 
+
+  <servlet>
+    <servlet-name>AltaLogotipo</servlet-name>
+    <servlet-class>com.csgit.cao.AltaLogotipo</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>ListaEmpresas</servlet-name>
+    <servlet-class>com.csgit.cao.ListaEmpresas</servlet-class>
+  </servlet> 
+  
+  <servlet>
+    <servlet-name>ListaCatPersonas</servlet-name>
+    <servlet-class>com.csgit.cao.ListaCatPersonas</servlet-class>
+  </servlet> 
+  
+  <servlet>
+    <servlet-name>ListaUsuarios</servlet-name>
+    <servlet-class>com.csgit.cao.ListaUsuarios</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>ListaObras</servlet-name>
+    <servlet-class>com.csgit.cao.ListaObras</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>ListaConceptos</servlet-name>
+    <servlet-class>com.csgit.cao.ListaConceptos</servlet-class>
+  </servlet> 
+  
+  <servlet>
+    <servlet-name>EditCatPersona</servlet-name>
+    <servlet-class>com.csgit.cao.EditCatPersona</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.csgit.cao.Login</servlet-class>
+  </servlet>   
+  
+  <servlet>
+    <servlet-name>ValidarSesion</servlet-name>
+    <servlet-class>com.csgit.cao.ValidarSesion</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>ListaMaquinaria</servlet-name>
+    <servlet-class>com.csgit.cao.ListaMaquinaria</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>EditMaquinaria</servlet-name>
+    <servlet-class>com.csgit.cao.EditMaquinaria</servlet-class>
+  </servlet>
+  
+   <servlet>
+    <servlet-name>EditPersona</servlet-name>
+    <servlet-class>com.csgit.cao.EditPersona</servlet-class>
+  </servlet>
+  
+   <servlet-mapping>
+   <servlet-name>Demo_MVC</servlet-name>
+    <url-pattern>/demomvc</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+       <servlet-name>Upload</servlet-name>
+       <url-pattern>/blob/upload</url-pattern>
+   </servlet-mapping>
+    <servlet-mapping>
+       <servlet-name>Excel</servlet-name>
+       <url-pattern>/excel</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+       <servlet-name>Serve</servlet-name>
+       <url-pattern>/serve</url-pattern>
+   </servlet-mapping>
+   
+   <servlet-mapping>
+       <servlet-name>AndroidServeURL</servlet-name>
+       <url-pattern>/blob/androidserveurl</url-pattern>
+   </servlet-mapping>
+
+
+  <servlet-mapping>
+    <servlet-name>AltaProyecto</servlet-name>
+    <url-pattern>/altaproyecto</url-pattern>
+  </servlet-mapping>
+        <servlet-mapping>
+  <servlet-name>AltaEmpresa</servlet-name>
+    <url-pattern>/altaempresa</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AltaObra</servlet-name>
+    <url-pattern>/altaobra</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>AltaConcepto</servlet-name>
+    <url-pattern>/altaconcepto</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>AltaUsuario</servlet-name>
+    <url-pattern>/altausuario</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>AltaCatPersona</servlet-name>
+    <url-pattern>/altacatpersona</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+       <servlet-name>UploadMaquinaria</servlet-name>
+       <url-pattern>/uploadMaquinaria</url-pattern>
+   </servlet-mapping>
+   
+    <servlet-mapping>
+       <servlet-name>AltaPersonal</servlet-name>
+       <url-pattern>/altapersonal</url-pattern>
+   </servlet-mapping>
+   
+    <servlet-mapping>
+       <servlet-name>AltaCatMaquinaria</servlet-name>
+       <url-pattern>/altacatmaquinaria</url-pattern>
+   </servlet-mapping>
+   
+    <servlet-mapping>
+       <servlet-name>EditPersonal</servlet-name>
+       <url-pattern>/editpersonal</url-pattern>
+	</servlet-mapping>
+   
+     <servlet-mapping>
+       <servlet-name>EditProyecto</servlet-name>
+       <url-pattern>/editproyecto</url-pattern>
+   </servlet-mapping>
+
+     <servlet-mapping>
+       <servlet-name>DirectorioProyecto</servlet-name>
+       <url-pattern>/directorioproyecto</url-pattern>
+   </servlet-mapping> 
+   
+        <servlet-mapping>
+       <servlet-name>DirectorioObra</servlet-name>
+       <url-pattern>/directorioobra</url-pattern>
+   </servlet-mapping>  
+     
+
+   
+     <servlet-mapping>
+       <servlet-name>EditUsuario</servlet-name>
+       <url-pattern>/editusuario</url-pattern>
+   </servlet-mapping>
+   
+   <servlet-mapping>
+       <servlet-name>EditConcepto</servlet-name>
+       <url-pattern>/editconcepto</url-pattern>
+   </servlet-mapping>
+    <servlet-mapping>
+       <servlet-name>EditObra</servlet-name>
+       <url-pattern>/editobra</url-pattern>
+   </servlet-mapping>
+   
+      <servlet-mapping>
+       <servlet-name>GetPuntos</servlet-name>
+       <url-pattern>/getpuntos</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+       <servlet-name>EditEmpresa</servlet-name>
+       <url-pattern>/editempresa</url-pattern>
+   </servlet-mapping>
+
+    <servlet-mapping>
+       <servlet-name>EditDirectorio</servlet-name>
+       <url-pattern>/directorioedit</url-pattern>
+   </servlet-mapping>
+   
+   <servlet-mapping>
+       <servlet-name>PruebaProyecto</servlet-name>
+       <url-pattern>/pruebaproyecto</url-pattern>
+   </servlet-mapping>
+   <servlet-mapping>
+       <servlet-name>AltaLogotipo</servlet-name>
+       <url-pattern>/altalogotipo</url-pattern>
+   </servlet-mapping>
+
+   <servlet-mapping>
+       <servlet-name>ListaPersonas</servlet-name>
+       <url-pattern>/listapersonas</url-pattern>
+   </servlet-mapping>
+   
+   <servlet-mapping>
+       <servlet-name>ListaEmpresas</servlet-name>
+       <url-pattern>/listaempresas</url-pattern>
+   </servlet-mapping>
+   
+   <servlet-mapping>
+       <servlet-name>ListaCatPersonas</servlet-name>
+       <url-pattern>/listacatpersonas</url-pattern>
+   </servlet-mapping>
+   
+   <servlet-mapping>
+       <servlet-name>ListaUsuarios</servlet-name>
+       <url-pattern>/listausuarios</url-pattern>
+   </servlet-mapping>
+   
+   <servlet-mapping>
+       <servlet-name>ListaObras</servlet-name>
+       <url-pattern>/listaobras</url-pattern>
+   </servlet-mapping>
+   
+   <servlet-mapping>
+       <servlet-name>ListaConceptos</servlet-name>
+       <url-pattern>/listaconceptos</url-pattern>
+   </servlet-mapping>
+   
+   <servlet-mapping>
+       <servlet-name>EditCatPersona</servlet-name>
+       <url-pattern>/editcatpersona</url-pattern>
+   </servlet-mapping>
+   
+  
+    <servlet-mapping>
+       <servlet-name>Login</servlet-name>
+       <url-pattern>/login</url-pattern>
+   </servlet-mapping>
+   
+   <servlet-mapping>
+       <servlet-name>ValidarSesion</servlet-name>
+       <url-pattern>/validarsesion</url-pattern>
+   </servlet-mapping>
+   
+   <servlet-mapping>
+       <servlet-name>ListaMaquinaria</servlet-name>
+       <url-pattern>/listamaquinaria</url-pattern>
+   </servlet-mapping>
+   
+    <servlet-mapping>
+       <servlet-name>EditMaquinaria</servlet-name>
+       <url-pattern>/editmaquinaria</url-pattern>
+   </servlet-mapping>
+   
+    <servlet-mapping>
+	    <servlet-name>EditPersona</servlet-name>
+	    <url-pattern>/editpersona</url-pattern>
+	</servlet-mapping>
+
+	 <servlet>
+	<servlet-name>xmppreceiver</servlet-name>
+	<servlet-class>com.csgit.cao.XMPPAgentServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>xmppreceiver</servlet-name>
+	<url-pattern>/_ah/xmpp/message/chat/</url-pattern>
+	</servlet-mapping>
+
+<servlet-mapping>
+    <servlet-name>EditPersona</servlet-name>
+    <url-pattern>/editpersona</url-pattern>
+</servlet-mapping>
+
+
+	 <servlet>
+    <servlet-name>multimedi</servlet-name>
+    <servlet-class>com.csgit.cao.multimediaUpload</servlet-class>
+  </servlet>
+  
+<servlet-mapping>
+    <servlet-name>multimedi</servlet-name>
+    <url-pattern>/multimedia</url-pattern>
+</servlet-mapping>
+
+	 <servlet>
+    <servlet-name>biblioteca</servlet-name>
+    <servlet-class>com.csgit.cao.biblioteca</servlet-class>
+  </servlet>
+  
+<servlet-mapping>
+    <servlet-name>biblioteca</servlet-name>
+    <url-pattern>/biblioteca</url-pattern>
+</servlet-mapping>
+	
+	<servlet>
+	    <servlet-name>DirectorioContactos</servlet-name>
+	    <servlet-class>com.csgit.cao.DirectorioContactos</servlet-class>
+    </servlet>
+  
+	<servlet-mapping>
+	    <servlet-name>DirectorioContactos</servlet-name>
+	    <url-pattern>/directoriocontactos</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+	    <servlet-name>Reports</servlet-name>
+	    <servlet-class>com.csgit.cao.Reports</servlet-class>
+    </servlet>
+  
+	<servlet-mapping>
+	    <servlet-name>Reports</servlet-name>
+	    <url-pattern>/reports</url-pattern>
+
+	</servlet-mapping>
+	
+
+		<servlet>
+	    <servlet-name>AltaMultimedia</servlet-name>
+	    <servlet-class>com.csgit.cao.AltaMultimedia</servlet-class>
+    </servlet>
+  
+	<servlet-mapping>
+	    <servlet-name>AltaMultimedia</servlet-name>
+	    <url-pattern>/altamultimedia</url-pattern>
+
+	</servlet-mapping>
+	<servlet>
+	    <servlet-name>GeneraReporte</servlet-name>
+	    <servlet-class>com.csgit.cao.GeneraReporte</servlet-class>
+    </servlet>
+  
+	<servlet-mapping>
+	    <servlet-name>GeneraReporte</servlet-name>
+	    <url-pattern>/generareporte</url-pattern>
+
+	</servlet-mapping>
+	
+
+ <servlet>
+<servlet-name>respaldo</servlet-name>
+<servlet-class>com.csgit.cao.RespaldoEndPoints</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>respaldo</servlet-name>
+<url-pattern>/respaldo</url-pattern>
+</servlet-mapping>
+
+<session-config>
+    <session-timeout>60</session-timeout>
+</session-config>
+
+
+
+<!--                                                       seccion del Directivo                                   -->
+
+
+<servlet>
+<servlet-name>proyectosDirectivo</servlet-name>
+<servlet-class>com.csgit.cao.directivo.ProyectosDirectivo</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>proyectosDirectivo</servlet-name>
+<url-pattern>/proyectosdirectivo</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+<servlet-name>Cargar</servlet-name>
+<servlet-class>com.csgit.cao.directivo.Cargar</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>Cargar</servlet-name>
+<url-pattern>/cargar</url-pattern>
+</servlet-mapping>
+
+
+
+
+</web-app>

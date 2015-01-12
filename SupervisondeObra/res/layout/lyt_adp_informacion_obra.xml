@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+    <TextView 
+        android:id="@+id/txv_frag_info_obra_title"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:text="Titulo"
+        android:gravity="center"
+        style="@style/stl_datos_obras_cabecera"
+        android:background="@drawable/list_frag_info_obra"
+        android:visibility="gone"/>
+    
+    <TextView 
+        android:id="@+id/txv_frag_info_obra_label"
+        android:layout_width="200dp"
+        android:layout_height="fill_parent"
+        android:text="Label"
+        style="@style/stl_datos_obras_titulo"/>
+
+    <TextView
+        android:id="@+id/txv_frag_info_obra_valor"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:text="Valor"
+        style="@style/stl_datos_obras_valor" />
+
+</LinearLayout>

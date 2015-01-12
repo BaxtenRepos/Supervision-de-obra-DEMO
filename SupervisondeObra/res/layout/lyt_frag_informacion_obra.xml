@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_fondo_informacion_obra"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="115dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/lv_frag_info_obra"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:padding="5dp"
+                android:background="@drawable/list_frag_info_obra_items" >
+            </ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.16"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txv_detalle_AvanFisico"
+                        style="@style/stl_datos_obra_avances"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:text="@string/str_informacion_obra_avance_fisico" />
+
+                    <TextView
+                        android:id="@+id/txv_detalle_porctAvanFisico"
+                        android:layout_width="173dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:gravity="center_horizontal"
+                        android:text="100%"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.17"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txv_detalle_AvanFinanciero"
+                        style="@style/stl_datos_obra_avances"
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:text="@string/str_informacion_obra_avance_financiero" />
+
+                    <TextView
+                        android:id="@+id/txv_detalle_porctAvanFinanciero"
+                        android:layout_width="186dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:text="100%"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/imgbtn_frag_info_obras_ver_mas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/img_btn_ver_mas" />
+
+                <ImageButton
+                    android:id="@+id/imgbtn_frag_info_obras_ocultar_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/img_btn_ocultar_info"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_frag_info_obra_ver_mas_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:background="@drawable/list_frag_info_obra_items"
+                android:visibility="gone" >
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

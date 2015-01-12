@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.csgit.cao"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission 
+        android:name="com.csgit.cao.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.csgit.cao.permission.MAPS_RECEIVE"/>
+    
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <permission
+        android:name="com.csgit.cao.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.csgit.cao.permission.C2D_MESSAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_supervisor"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme" >
+
+        <!-- Act Login -->
+        <activity
+            android:name="com.csgit.cao.controllers.Act_Login"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Act_Galerias -->
+        <activity 
+            android:name="com.csgit.cao.controllers.Act_Galerias"
+            android:label="@string/str_act_galerias_title"
+            android:parentActivityName="com.csgit.cao.controllers.Act_Main">
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.csgit.cao.controllers.Act_Main"/>
+        </activity>
+        
+        <!-- Act StreetView -->
+        <activity 
+            android:name="com.csgit.cao.controllers.Act_StreetView"
+            android:label="CAO"
+            android:parentActivityName="com.csgit.cao.controllers.Act_Ubicacion">
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.csgit.cao.controllers.Act_Ubicacion"/>
+        </activity>
+        
+        <!-- Act Docuemntos -->
+        <activity 
+            android:name="com.csgit.cao.controllers.Act_Documentos"
+            android:label="@string/str_act_documentos_title"
+            android:parentActivityName="com.csgit.cao.controllers.Act_Main">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.csgit.cao.controllers.Act_Main" />
+            
+        </activity>
+        
+        <!-- Act Directorio -->
+        <activity 
+            android:name="com.csgit.cao.controllers.Act_Contactos"
+            android:label="@string/str_act_directorio_title"
+            android:parentActivityName="com.csgit.cao.controllers.Act_Main">
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.csgit.cao.controllers.Act_Main"/>
+        </activity>
+        
+        <!-- Act Ayuda -->
+        <activity
+            android:name="com.csgit.cao.controllers.Act_Ayuda"
+            android:label="@string/str_act_ayuda_name"
+            android:parentActivityName="com.csgit.cao.controllers.Act_Main" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.csgit.cao.controllers.Act_Main" />
+        </activity>
+
+        <!-- Act Acerca de -->
+        <activity
+            android:name="com.csgit.cao.controllers.Act_Acerca_De"
+            android:label="@string/str_act_acerca_name"
+            android:parentActivityName="com.csgit.cao.controllers.Act_Main"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.csgit.cao.controllers.Act_Main" />
+        </activity>
+
+        <!-- Act Main -->
+        <activity
+            android:name="com.csgit.cao.controllers.Act_Main"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchResultsActivity" />
+        </activity>
+
+        <!-- Act Configuraciones -->
+        <activity
+            android:name="com.csgit.cao.controllers.Act_Configuraciones"
+            android:label="@string/str_act_conf_title"
+            android:parentActivityName="com.csgit.cao.controllers.Act_Main" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.csgit.cao.controllers.Act_Main" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MANAGE_NETWORK_USAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Act Notas -->
+        <activity
+            android:name="com.csgit.cao.controllers.Act_Notas"
+            android:label="@string/str_act_notas_titulo" >
+        </activity>
+
+        <!-- Act Descripcion Evidencia -->
+        <activity
+            android:name="com.csgit.cao.controllers.Act_Descripcion_Evidencia"
+            android:label="@string/str_act_desc_evidencia_titulo" >
+        </activity>
+        
+        <!-- Servicio para el tratamiento del video -->
+        <service 
+            android:name="com.netcompss.ffmpeg4android.FFMpegRemoteServiceBridge"
+            android:exported="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.netcompss.ffmpeg4android.FFMpegRemoteServiceBridge"/>
+            </intent-filter>
+        </service>
+        
+        <!-- Act Personal -->
+        <activity
+            android:name="com.csgit.cao.controllers.Act_Personal"
+            android:label="@string/str_act_personal_titulo"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- Act Maquinaria -->
+        <activity
+            android:name="com.csgit.cao.controllers.Act_Maquinaria"
+            android:label="@string/str_act_maquinaria_titulo"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <!-- Act Estimacion -->
+        <activity 
+            android:name="com.csgit.cao.controllers.Act_Estimacion" 
+            android:label="@string/str_act_estimacion_titulo"
+            android:parentActivityName="com.csgit.cao.controllers.Act_Main"
+            android:screenOrientation="portrait" >
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.csgit.cao.controllers.Act_Main"/>
+        </activity>
+
+        <!-- Act Reporte Concepto -->
+        <activity
+            android:name="com.csgit.cao.controllers.Act_Reporte_Concepto"
+            android:label="@string/str_act_reporte_concepto_titulo"
+            android:parentActivityName="com.csgit.cao.controllers.Act_Main"
+            android:theme="@style/CustomActionBarTheme"
+            android:launchMode="singleTop" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.csgit.cao.controllers.Act_Main" />
+        </activity>
+        
+         <!-- Act Historial -->
+        <activity 
+            android:name="com.csgit.cao.controllers.Act_Historial_Operacion"
+            android:label="@string/str_act_historial_title"
+            android:parentActivityName="com.csgit.cao.controllers.Act_Reporte_Concepto">
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.csgit.cao.controllers.Act_Reporte_Concepto"/>
+        </activity>
+
+        <!-- Act Ubicación -->
+        <activity
+            android:name="com.csgit.cao.controllers.Act_Ubicacion"
+            android:label="@string/str_act_ubicacion_titulo"
+            android:parentActivityName="com.csgit.cao.controllers.Act_Main"
+            android:theme="@style/CustomActionBarTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.csgit.cao.controllers.Act_Main" />
+        </activity>
+        
+        <!-- Act FullImage Minutas -->
+        <activity
+            android:name="com.csgit.cao.controllers.Act_FullImage_Minutas"
+            android:label="@string/str_act_galeria_minuta_titulo" >
+        </activity>
+
+        <!-- Google Maps -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyC21oO0pD1t2Uycpa7c9OzyANqkM2WcbUQ" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        
+         
+        
+        <!-- Para recibir las notificaiones -->
+        <receiver
+            android:name="com.csgit.cao.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.csgit.cao" />
+            </intent-filter>
+            <!--  <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.csgit.cao" />
+            </intent-filter> -->
+        </receiver>
+		<!-- GCM -->
+        <service android:name="com.csgit.cao.GcmIntentService"/>
+       
+        <!-- SyncAdapter -->
+        <service
+            android:name="com.csgit.cao.syncadapter.Sync_SyncService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadapter" />
+        </service>
+
+        <!-- Servicio de Autenticacion -->
+        <service android:name="com.csgit.cao.accountmanager.Account_AuthenticatorService" >
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+
+        <!-- Content Provider -->
+        <provider
+            android:name="com.csgit.cao.dao.CaoContentProvider"
+            android:authorities="com.csgit.cao.dao.CaoContentProvider"
+            android:exported="false"
+            android:syncable="true" >
+        </provider>
+    </application>
+
+</manifest>

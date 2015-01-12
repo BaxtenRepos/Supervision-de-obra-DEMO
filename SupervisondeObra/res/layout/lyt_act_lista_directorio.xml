@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frm_lyt_directorio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lyt_listados_directorio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout> -->
+
+</FrameLayout>

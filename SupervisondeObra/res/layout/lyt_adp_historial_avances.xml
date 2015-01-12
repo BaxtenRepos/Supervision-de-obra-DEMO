@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.11"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txv_historial_avances_cantidad_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_adp_historial_cantidad_tiitle"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txv_historial_avances_cantidad_valor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_adp_historial_cantidad_valor"
+            android:textAlignment="gravity"
+            android:gravity="center" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.11"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txv_historial_avances_unidadM_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_frag_historial_unidadM_title"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txv_historial_avances_unidadM_valor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_frag_historial_unidadM_valor"
+            android:textAlignment="gravity"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txv_historial_avances_fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="@string/str_adp_historial_fecha"
+        android:textAlignment="gravity"
+        android:textStyle="bold" />
+
+</LinearLayout>

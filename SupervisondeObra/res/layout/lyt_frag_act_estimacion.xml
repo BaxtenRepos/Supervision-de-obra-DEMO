@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ExpandableListView
+        android:id="@+id/exp_lv_conceptos_estimacion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/separador" />
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer_Estimacion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:content="@+id/conceptos_ingresadas_estimacion"
+        android:handle="@+id/handle_estimacion" >
+
+        <LinearLayout
+            android:id="@+id/handle_estimacion"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/list_frag_info_obra"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="262dp"
+                    android:layout_height="40dp"
+                    android:text="@string/str_act_estimacion_conceptos_agragados_title"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txv_fecha_handle_estimacion"
+                    android:layout_width="262dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="14dp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/img_collapse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_action_collapse" />
+
+                <ImageView
+                    android:id="@+id/img_expand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_action_expand"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/conceptos_ingresadas_estimacion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/edt_numEstimacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Número de Estimación"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/edt_fechaInicioEstimacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:ems="8"
+                    android:hint="Fecha Inicio" />
+
+                <EditText
+                    android:id="@+id/edt_fechaTerminoEstimacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:ems="8"
+                    android:hint="Fecha Termino" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/list_conceptos_ingresadas_estimacion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" >
+            </ListView>
+        </LinearLayout>
+    </SlidingDrawer>
+
+</RelativeLayout>

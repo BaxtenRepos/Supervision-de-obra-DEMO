@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Act Galerias -->
+    <string name="str_act_galerias_title">Galerias</string>
+        
+    <!-- DialogFragment General -->
+    <string name="str_dialog_fragment_aceptar">Aceptar</string>
+    <string name="str_dialog_fragment_cancelar">Cancelar</string>
+    
+    <!-- Preferencias -->
+    <string name="str_pre_multimedia">listPref</string>
+    <string name="str_pre_default_multimedia">Wi-Fi</string>
+    
+    <!-- Frag Conceptos -->
+    <string name="str_frag_concepto_clave">Clave</string>
+    <string name="str_frag_concepto_nombre">Nombre del Concepto</string>
+    <string name="str_frag_concepto_empy">No existen conceptos</string>
+    
+    <!-- Act Directorio -->
+    <string name="str_act_directorio_title">Directorio de Contactos</string>
+    <string name="str_act_directorio_lista_vacia">No existen contactos</string>
+    
+    <!-- Act Historial Operaciones -->
+    <string name="str_act_historial_title">Historial de Operaciones</string>
+    <string name="str_adp_historial_cantidad_tiitle">Cantidad</string>
+    <string name="str_adp_historial_cantidad_valor">123</string>
+    <string name="str_adp_historial_fecha">01/12/2014 13:23:11</string>
+    <string name="str_adp_historial_cantidad_original">Cantidad Original: </string>
+    <string name="str_frag_historial_operaciones_vacio">No existen operaciones</string>
+    <string name="str_frag_historial_unidadM_title">Unidad de Medida</string>
+    <string name="str_frag_historial_unidadM_valor">Plano</string>
+    
+    
+    <!-- Dialog Operaciones Concepto -->
+    <string name="str_dialog_operaciones_title_aditiva">Ingresar Aditiva</string>
+    <string name="str_dialog_operaciones_title_deductiva">Ingresar Deductiva</string>
+    <string name="str_dialog_operaciones_cantidad">Cantidad:</string>
+    <string name="str_dialog_operaciones_boton_cancelar">Cancelar</string>
+    <string name="str_dialog_operaciones_boton_aceptar">Aceptar</string>
+    
+    <!-- Frag Graficas Avance -->
+    <string name="str_frag_graficas_radio_fisico_title">Físico</string>
+    <string name="str_frag_graficas_radio_financiero_title">Financiero</string>
+    <string name="str_frag_graficas_label_fisico_real">Real</string>
+    <string name="str_frag_graficas_label_fisico_programado">Programado</string>  
+    <string name="str_frag_graficas_label_financiero_real">Real</string>
+    <string name="str_frag_graficas_label_financiero_programado">Prgramado</string>
+    <string name="str_frag_graficas_label_fisico_tendencia">Tendencia</string>
+    <string name="str_frag_graficas_label_financiero_tendencia">Tendencia</string>
+    
+    <!-- Frag Obras -->
+    <string name="str_frag_obras_porcentajes">100%</string>
+    <string name="str_frag_obras_nombre_ejemplo">Este es un nombre largo de la obra
+        que se mostrara en esta lista, hay que verrificar que el nombre se vea bien para el usuario y
+        que ademas ocupe bien el espacio para poder hacer correctamente la distribucion del texto por
+        cada adapter.</string>
+        
+    <string name="str_frag_obras_empresa_contratista">Este es el nombre de la empresa contratista 
+        de la obra. </string>
+        
+    <string name="str_frag_obras_superintendente">Este es el nombre del Super Intendente</string>
+    
+    <string name="str_frag_obras_fisico_title">Físico</string>
+    <string name="str_frag_obras_financiero_title">Financiero</string>
+    <string name="str_frag_obras_limite_title">Límite</string>
+    <string name="str_frag_obras_empy">No existen Obras para mostrar</string>
+    
+    <!-- Configuraciones -->
+    <string name="str_config_account_type">iuyet.com.mx</string>
+    
+    <!-- Act Documentos -->
+    <string name="str_act_documentos_title">Documentos de Obra</string>
+    <string name="str_act_documentos_nombre_documento">Nombre del documento.xxx</string>
+    <string name="str_act_documentos_dialog_delete_mensaje">Eliminar Documento</string>
+    <string name="str_act_documentos_dialog_delete_si">Si</string>
+    <string name="str_act_documentos_dialog_delete_no">No</string>
+    <string name="str_act_documentos_empy">No existen doucumentos para mostrar</string>
+    <string name="str_act_documentos_dialog_title">Advertencia</string>
+    
+    <!-- Avance Obra -->
+    <string name="str_frag_avance_tendencia_titulo">Tendencia:</string>
+    <string name="str_frag_avance_tendencia_valor">día(s)</string>
+    
+    <!-- Act Ubicación -->
+    <string name="str_act_ubicacion_titulo">Ubicación de Obra</string>
+    <string name="str_act_ubicacion_nohay_puntos">No hay puntos para mostrar</string>
+    <string name="str_act_ubicacion_makert_descripcion">Área:</string>
+    
+    <!-- Act Maquinaria -->
+    <string name="str_act_maquinaria_titulo">Nuevo Reporte Maquinaria</string>
+    <string name="str_act_maquinaria_dialog_delete_mensaje">Eliminar maquinaria</string>
+    <string name="str_act_maquinaria_dialog_delete_si">Si</string>
+    <string name="str_act_maquinaria_dialog_delete_no">No</string>
+    <string name="str_act_maquinaria_seleccione">Seleccione un opción</string>
+    <string name="str_act_maquinaria_dialog_title_cantidad_insert">Ingresa una Cantidad</string>
+    <string name="str_act_maquinaria_dialog_title_cantidad_update">Nueva Cantidad</string>
+    <string name="str_act_maquinaria_ver_reporte_maquinaria">Ver Reporte de Maquinaria</string>
+    
+    <!-- Act Personal -->
+    <string name="str_act_personal_titulo">Nuevo Reporte Personal</string>
+    <string name="str_act_personal_cantidad">Cantidad</string>
+    <string name="str_act_personal_cantidad_nueva">Nueva Cantidad</string>
+    <string name="str_act_personal_cantidad_dialog_title">Ingresa una Cantidad</string>
+    <string name="str_act_personal_dialog_delete_mensaje">Eliminar personal</string>
+    <string name="str_act_personal_dialog_delete_si">Si</string>
+    <string name="str_act_personal_dialog_delete_no">No</string>
+    
+    <!-- Frag Personal -->
+    <string name="str_frag_personal_sincronizado">Sincronizado</string>
+    <string name="str_frag_personal_no_sincronizado">No Sincronizado</string>
+    <string name="str_frag_personal_empy">No existen elementos para mostrar</string>
+    
+    <!-- Act Estimacion -->
+    <string name="str_act_estimacion_titulo">Nueva Estimación</string>
+    <string name="str_act_estimacion_faltan_fechas">Faltan fechas por ingresar</string>
+    <string name="str_act_estimacion_falta_numero_estimacion">No ha ingresado Número de Estimación</string>
+    <string name="str_act_estimacion_guardado_ok">Estimación Guardada</string>
+    <string name="str_act_estimacion_conceptos_agragados_title">Conceptos Agregados</string>
+    <string name="str_act_estimacion_fecha_termino_menor">La fecha de Termino NO puede ser menor a la fecha de Inicio</string>
+    
+    <!-- Act Notas -->
+    <string name="str_act_notas_titulo">Nueva Nota</string>
+    <string name="str_act_notas_not_delete">La nota no puede ser eliminada porque ya fue sincronizada</string>
+    
+    <!-- Frag Notas -->
+    <string name="str_frag_notas_empy">No hay Notas para mostrar</string>
+    
+    <!-- Act Ayuda -->
+    <string name="str_act_ayuda_name">Ayuda</string>
+    
+    <!-- Act Configuraciones -->
+    <string name="str_act_conf_title">Configuraciones</string>
+    <string name="str_act_conf_title_Network">Sincronización</string>
+    <string name="str_act_conf_descripcion">Configurar el envio de Multimedia.</string>
+    
+    <!-- Act Acerca De -->
+    <string name="str_act_acerca_version">Versión</string>
+    <string name="str_act_acerca_name">Acerca de</string>
+    
+    <!-- Act_Login -->
+    <string name="str_titulo_logo">Coordinación</string>
+    <string name="str_btn_ingresar">Entrar</string>
+    <string name="str_edt_hint_usuario">Usuario</string>
+    <string name="str_edt_hint_contrasena">Contraseña</string>
+    <string name="str_toast_error_login">Error, Verifica tu usuario y contraseña</string>
+    <string name="str_act_login_login">Iniciando Sesión...</string>
+    <string name="str_act_login_dialog_title">Advertencia</string>
+    <string name="str_act_login_dialog_mensaje">Ya existe una cuenta asociada a este dispositivo, si continua, la información que no haya sido sincronizada se perderá, desea continuar?</string>
+    
+    <!-- App  Act Main-->
+    <string name="app_name">CAO Supervisor</string>
+    <string name="titulo_principal">Mis Obras</string>
+    <string name="str_app_construccion">Próximamente...</string>
+    <string name="str_act_main_sesion_cerrada">Sesión Cerrada</string>
+    <string name="str_dialog_opcines_archivo_no_soportado">Archivo no soportado</string>
+    <string name="str_dialog_opcines_archivo_error">Error al obtener el documento o el archivo no es soportado</string>
+    <string name="str_dialog_opciones_archivo_cargado">Archivo agregado correctamente</string>
+    <string name="str_dialog_opciones_archivo_procesando">Procensando Archivo</string>
+    <string name="str_all_rigths_reserced">All rigths reserved.</string>
+    <string name="str_frag_dialog_agregar_reporte_title">Nuevo Reporte</string>
+    
+    <!-- Toast -->
+    <string name="str_toast_ok_evidencia">Evidencia Guardada</string>
+    <string name="str_toast_error_evidencia">Error al Guardar</string>
+    <string name="str_toast_erroserver">Servidor Inaccesible, Verifica tu Usuario y Contraseña</string>
+    <string name="str_toast_sync_error">Ocurrió un error inesperado</string>
+    <string name="str_toast_sync_finalizada">Sincronización Finalizada</string>
+    <string name="str_toast_sync_inicia">Sincronización Iniciada...</string>
+    <string name="str_toast_act_desc_guardar_ok">Evidencia Guardada</string>
+    <string name="str_toast_act_desc_guardar_error">Error al guardar la Evidencia</string>
+    <string name="str_toast_act_desc_guardar_descartada">Evidencia Descartada</string>
+    <string name="str_toast_dialog_evidencia_error">No se puede generar la evidencia</string>
+    <string name="str_toast_error_crear_archivo">Error al crear archivo</string>
+    <string name="str_toast_calendar_no">Por favor instalar Google Calendar</string>
+    <string name="str_toast_minutas_error">No se puede generar la Minuta</string>
+    <string name="str_toast_minuta_guardar_ok">Minuta Guardada</string>
+    <string name="str_toast_minuta_guardar_error">Error al guardar la Minuta</string>
+    <string name="str_toast_notas_guardar">Nota Guardada</string>
+    <string name="str_toast_notas_descartada">Nota Descartada</string>
+    <string name="str_toast_notas_eliminada">Nota Eliminada</string>
+    <string name="str_toast_minuta_eliminada">Minuta Eliminada</string>
+    <string name="str_toast_error_eliminar">Error al eliminar el elemto</string>
+    <string name="str_toast_rep_personal_guardar">Reporte Guardado</string>
+    <string name="str_toast_rep_maquinaria_guaradar">Reporte Guardado</string>
+    <string name="str_toast_rep_concepto_descardato">Reporte Descartado</string>
+    <string name="str_toast_reporte_descardado">Reporte Descartado</string>
+    <string name="str_toast_reporte_eliminado">Reporte Eliminado</string>
+    <string name="str_toast_estimacion_eliminada">Estimación Eliminada</string>
+    <string name="str_toast_pesonal_eliminado">Personal Eliminado</string>
+    <string name="str_toast_documento_eliminado">Documento Eliminado</string>
+    <string name="str_toast_maquinaria_eliminada">Maquinaria Eliminada</string>
+    <string name="str_toast_rep_concepto_cantidad_mayor">La cantidad sobrepasa la cantidad total</string>
+    <string name="str_toast_rep_concepto_cantidad_guardada">Cantidad Guardada</string>
+    <string name="str_toast_error_conexion">Error al Iniciar Sesión</string>
+    <string name="str_toast_error_cuenta_no_existe">Error, la cuenta no existe</string>
+    <string name="str_toast_cantidad_reporte_existente">Este personal ya se encuentra reportado</string>
+    <string name="str_toast_cantidad_reporte_existente_maquinaria">Esta maquinaria ya se encuentra reportado</string>
+    <string name="str_toast_cantidad_reporte_vacia">Cantidad descartada</string>
+    <string name="str_toast_cantidad_reporte_cantidad_faltante">Falta ingresar la cantidad</string>
+    <string name="str_toast_eviencia_eliminada">Evidencia Eliminada</string>
+    <string name="str_toast_not_delete_eviencia">La evidencia NO puede ser eliminada porque ya fue sincronizada</string>
+    <string name="str_toast_not_delete_reportes">El reporte NO puede ser eliminado porque ya fue sincronizado</string>
+    <string name="str_toast_not_delete_minuta">La Minuta NO puede ser eliminada porque ya fue sincronizada</string>
+    <string name="str_toast_not_delete_documento">El Documento NO puede ser eliminado porque ya fue sincronizado</string>
+    <string name="str_toast_not_delete_estimacion">La Estimación NO puede ser eliminada porque ya fue sincronizada</string>
+    <string name="str_toast_not_save_operacion">Operación No permitida</string>
+    <string name="str_toast_operacion_concepto_ok">Operación realizada correctamente</string>
+    <string name="str_toast_operacion_concepto_error">Error al ejecutar la operación</string>
+    <string name="str_toast_lost_connection">No es posible establecer conexión con el servidor. Revise su conexión a Internet.</string>
+    <string name="str_toast_mas_minutas_error">No puede tomar mas de 10 Minutas por día</string>
+    <string name="str_toast_mas_evidencia_foto_error">No puede tomar mas de 20 fotos por día</string>
+    <string name="str_toast_mas_evidencia_video_error">No puede tomar mas de 5 videos por día</string>
+    <string name="str_toast_nuevo_reporte_diario">Añada los datos al reporte existente</string>
+    <string name="str_toast_concepto_ya_reportado">El concepto ya esta reportado</string>
+    
+    <!-- Menus -->
+    <string name="str_menu_refresh">Actualizar</string>
+    <string name="str_menu_buscar_obras_hint">Buscar...</string>
+    <string name="str_menu_buscar_obras">Buscar Obras</string>
+    <string name="str_menu_buscar_conceptos">Buscar Conceptos</string>
+    <string name="str_menu_buscar_documentos">Buscar Documentos</string>
+    <string name="str_menu_opciones">Subir Elmentos</string>
+    <string name="str_menu_directorio">Directorio</string>
+    <string name="str_menu_ubicacion_obra">Ubicacion Obra</string>
+    <string name="str_menu_personal">Reporte Personal</string>
+    <string name="str_menu_maquinaria">Reporte Maquinaria</string>
+    <string name="str_menu_agregar_reporte">Nuevo Reporte</string>
+    <string name="str_menu_notas">Reporte Actividades</string>
+    <string name="str_menu_tomar_evidencia">Tomar Evidencia</string>
+    <string name="str_menu_estimacion_obra">Estimación Obra</string>
+    <string name="str_menu_galerias">Galerías</string>
+    <string name="str_menu_ver_documentos">Documentos</string>
+    <string name="str_menu_notas_borrar_nota">Eliminar Nota</string>
+    <string name="str_menu_eliminar_evidencia">Eliminar Evidencia</string>
+    <string name="str_menu_eliminar_reporte">Eliminar Reporte</string>
+    <string name="str_menu_eliminar_minuta">Eliminar Minuta</string>
+    <string name="str_menu_eliminar_estimacion">Eliminar Estimación</string>
+    <string name="str_menu_aditiva">Aditiva</string>
+    <string name="str_menu_deductiva">Deductiva</string>
+    <string name="str_menu_historial_operaciones">Historial</string>
+    
+    <!-- ProgressDialog -->
+    <string name="str_progressdialog_synctittle">Sincronizando</string>
+    <string name="str_progressdialog_syncmessage">Descargando......</string>
+    <string name="str_progressdialog_syncinfo">Sincronizando Información......</string>
+    <string name="str_progressdialog_logintittle">Login</string>
+    <string name="str_progressdialog_loginmessage">Esperando respuesta del servidor.....</string>
+    <string name="str_progressdialog_validarlogin">Validado Datos</string>
+    <string name="str_progressdialog_cargar_galeria">Cargando Galeria</string>
+        
+    <!-- Actividad Evidencia -->
+    <string name="str_act_galeria_evi_titulo">Galeria de Evidencia</string>
+    <string name="str_act_desc_evidencia_titulo">Descripcción de Evidencia</string>
+    <string name="str_act_evi_hint">Agregar Descripción</string>
+    <string name="str_act_evi_titulo">Descripción</string>
+    <string name="str_act_evi_title_dialog">Elige una opción</string>
+    <string name="str_act_galeria_lyt_default">No existen elementos para mostrar</string>
+    
+    <!-- Reporte de avance del concepto -->    
+    <string name="str_act_reporte_concepto_titulo">Reporte de Concepto</string>
+    <string name="str_reporte_concepto_avance_decripcion">Descripción Total del Concepto</string>
+    <string name="str_reporte_concepto_avance_importe">Importe:</string>
+    <string name="str_reporte_concepto_avance_precio">Precio Unitario:</string>
+    <string name="str_reporte_concepto_avance_fecha_inicio">Fecha de Inicio:</string>
+    <string name="str_reporte_concepto_avance_fecha_termino">Fecha de Termino:</string>
+    <string name="str_reporte_concepto_avance_titulo">Medida:</string>
+    <string name="str_reporte_concepto_avance_fecha">Fecha:</string>
+    <string name="str_reporte_concepto_avance_lugar">Lugar:</string>
+    <string name="str_reporte_concepto_avance_unidad_medida">PZA</string>
+    <string name="str_reporte_concepto_avance_descripcion_completa">Descripción Completa</string>
+    <string name="str_reporte_concepto_avance_registro">Registro de Avance</string>
+    <string name="str_reporte_concepto_avance_acomulado">Estado de Avance</string>
+    <string name="str_reporte_concepto_avance_real">Cantidad Acumulada</string>
+    <string name="str_reporte_concepto_avance_total">Cantidad Total</string>
+    <string name="str_reporte_concepto_avance_programado">Cantidad Programada:</string>
+    <string name="str_reporte_concepto_avance_val_programado">1000</string>
+    
+    <string name="str_dialog_reporte_concepto_titulo">Advertencia</string>
+    <string name="str_dialog_reporte_concepto_mensaje">¿Ha revisado que la  información ingresada sea la correcta?</string>
+    <string name="str_dialog_reporte_concepto_si">SI</string>
+    <string name="str_dialog_reporte_concepto_no">NO</string>
+    
+    <!-- Actividad Minutas -->
+    <string name="str_act_galeria_minuta_titulo">Galeria de Minutas</string>
+    
+    <!-- DrawerView -->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    
+    <!-- Catalogos -->
+    <string name="str_selecciona_personal">Seleccione una categoria:</string>
+
+    <!-- Informacion Obra Ver Mas -->
+    <string name="str_informacion_obra_avance_fisico">Avance Físico</string>
+    <string name="str_informacion_obra_avance_financiero">Avance Financiero</string>
+    <string name="str_informacion_obra_num_contrato">Número de Contrato:</string>
+    <string name="str_informacion_obra_periodo_ejecucion">Periodo de Ejecución:</string>
+    <string name="str_informacion_obra_fecha_inicio">Fecha de Inicio:</string>
+    <string name="str_informacion_obra_fecha_termino">Fecha de Termino:</string>
+    <string name="str_informacion_obra_superintendente">Superintendente de Obra:</string>
+    <string name="str_informacion_obra_rfc_empresa">RFC Empresa:</string>
+    <string name="str_informacion_obra_nom_obra">Nombre de la Obra:</string>
+    <string name="str_informacion_obra_gobierno">Gobierno:</string>
+    <string name="str_informacion_obra_secretaria">Secretaría:</string>
+    <string name="str_informacion_obra_dependencia">Dependencia:</string>
+    <string name="str_informacion_obra_subdireccion">Subdirección:</string>
+    <string name="str_informacion_obra_area">Area:</string>
+    <string name="str_informacion_obra_descripcion">Descripción:</string>
+    <string name="str_informacion_obra_direccion">Dirección:</string>
+    <string name="str_informacion_obra_fecha_contrato">Fecha de Contrato:</string>
+    <string name="str_informacion_obra_tipo_contrato">Tipo de Contrato:</string>
+    <string name="str_informacion_obra_importe_contrato_sinIVA">Importe de Contrato sin IVA:</string>
+    <string name="str_informacion_obra_ejercicio_fiscal1">Ejercicio Físcal 1:</string>
+    <string name="str_informacion_obra_importe_fiscal_sinIVA">Importe Físcal sin IVA:</string>
+    <string name="str_informacion_obra_importe_convenio_ampliacion">Importe Convenio Ampliación:</string>
+    <string name="str_informacion_obra_importe_convenio_reduccion">Importe Convenio Reducción:</string>
+    <string name="str_informacion_obra_importe_ajustes_costos">Importe Ajustes de Costos:</string>
+    <string name="str_informacion_obra_partida_presupuestal">Partida Presupuestal:</string>
+    <string name="str_informacion_obra_anticipo">Anticipo:</string>
+    <string name="str_informacion_obra_anticipo_noFianza">Número de Fianza del Anticipo:</string>
+    <string name="str_informacion_obra_anticipo_fecha">Fecha de Fianza del Anticipo:</string>
+    <string name="str_informacion_obra_anticipo_monto">Monto de Fianza del Anticipo:</string>
+    <string name="str_informacion_obra_cumplimiento_noFianza">Número de Fianza Cumplimiento:</string>
+    <string name="str_informacion_obra_cumplimiento_fecha">Fecha de Fianza Cumplimiento:</string>
+    <string name="str_informacion_obra_cumplimiento_monto">Monto de Fianza Cumplimiento:</string>
+    <string name="str_informacion_obra_cargo_revision1">Cargo Revisión 1:</string>
+    <string name="str_informacion_obra_nombre_revision1">Nombre Revisión 1:</string>
+    <string name="str_informacion_obra_cargo_revision2">Cargo Revisión 2:</string>
+    <string name="str_informacion_obra_nombre_revision2">Nombre Revisión 2:</string>
+</resources>

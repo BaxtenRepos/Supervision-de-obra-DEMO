@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<ListView 
+    android:id="@+id/android:list"
+    style="@style/stl_list_obras"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp" >
+
+</ListView>
+    
+</LinearLayout>
+
+<!-- <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frm_lyt_notas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/fondo_body" >
+
+        <EditText
+            android:id="@+id/edt_nueva_nota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Agregar una nota rápida"
+            android:imeOptions="actionDone"
+            android:inputType="text" >
+
+            <requestFocus />
+        </EditText>
+
+        <ListView
+            android:id="@+id/lyt_listados_notas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            style="@style/stl_list_obras" />
+    </LinearLayout>
+
+</FrameLayout> -->

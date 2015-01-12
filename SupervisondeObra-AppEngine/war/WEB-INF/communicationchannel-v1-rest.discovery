@@ -1,0 +1,5118 @@
+{
+ "kind": "discovery#restDescription",
+ "etag": "\"c05bU6zpvXPOpQakG5gG3IOJh8Y/Ux-pamDw-ZiQb-vYqaPpof4VEw4\"",
+ "discoveryVersion": "v1",
+ "id": "communicationchannel:v1",
+ "name": "communicationchannel",
+ "version": "v1",
+ "description": "This is an API",
+ "ownerDomain": "csgit.com",
+ "ownerName": "csgit.com",
+ "packagePath": "cao.model",
+ "icons": {
+  "x16": "http://www.google.com/images/icons/product/search-16.gif",
+  "x32": "http://www.google.com/images/icons/product/search-32.gif"
+ },
+ "protocol": "rest",
+ "baseUrl": "https://superobra-adquem.appspot.com/_ah/api/communicationchannel/v1/",
+ "basePath": "/_ah/api/communicationchannel/v1/",
+ "rootUrl": "https://superobra-adquem.appspot.com/_ah/api/",
+ "servicePath": "communicationchannel/v1/",
+ "batchPath": "batch",
+ "parameters": {
+  "alt": {
+   "type": "string",
+   "description": "Data format for the response.",
+   "default": "json",
+   "enum": [
+    "json"
+   ],
+   "enumDescriptions": [
+    "Responses with Content-Type of application/json"
+   ],
+   "location": "query"
+  },
+  "fields": {
+   "type": "string",
+   "description": "Selector specifying which fields to include in a partial response.",
+   "location": "query"
+  },
+  "key": {
+   "type": "string",
+   "description": "API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token.",
+   "location": "query"
+  },
+  "oauth_token": {
+   "type": "string",
+   "description": "OAuth 2.0 token for the current user.",
+   "location": "query"
+  },
+  "prettyPrint": {
+   "type": "boolean",
+   "description": "Returns response with indentations and line breaks.",
+   "default": "true",
+   "location": "query"
+  },
+  "quotaUser": {
+   "type": "string",
+   "description": "Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. Overrides userIp if both are provided.",
+   "location": "query"
+  },
+  "userIp": {
+   "type": "string",
+   "description": "IP address of the site where the request originates. Use this if you want to enforce per-user limits.",
+   "location": "query"
+  }
+ },
+ "auth": {
+  "oauth2": {
+   "scopes": {
+    "https://www.googleapis.com/auth/userinfo.email": {
+     "description": "View your email address"
+    }
+   }
+  }
+ },
+ "schemas": {
+  "Aditivas_Deductivas": {
+   "id": "Aditivas_Deductivas",
+   "type": "object",
+   "properties": {
+    "cantidad": {
+     "type": "number",
+     "format": "double"
+    },
+    "fecha": {
+     "type": "string"
+    },
+    "id_AditivasDeductivas": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_Concepto": {
+     "type": "string",
+     "format": "int64"
+    },
+    "tipoOperacion": {
+     "type": "integer",
+     "format": "int32"
+    }
+   }
+  },
+  "Avance_Financiero": {
+   "id": "Avance_Financiero",
+   "type": "object",
+   "properties": {
+    "estado": {
+     "type": "integer",
+     "format": "int32"
+    },
+    "fechaReporte": {
+     "type": "string"
+    },
+    "id_AvanceFinaciero": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_referencia": {
+     "type": "string",
+     "format": "int64"
+    },
+    "pavanceFinanciero": {
+     "type": "number",
+     "format": "double"
+    },
+    "porcentaje_tendencia": {
+     "type": "number",
+     "format": "double"
+    },
+    "tipo_Entidad": {
+     "type": "integer",
+     "format": "int32"
+    }
+   }
+  },
+  "Avance_Fisico": {
+   "id": "Avance_Fisico",
+   "type": "object",
+   "properties": {
+    "estado": {
+     "type": "integer",
+     "format": "int32"
+    },
+    "fechaReporte": {
+     "type": "string"
+    },
+    "id_AvanceFisico": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_referencia": {
+     "type": "string",
+     "format": "int64"
+    },
+    "pavanceFisico": {
+     "type": "number",
+     "format": "double"
+    },
+    "porcentaje_tendencia": {
+     "type": "number",
+     "format": "double"
+    },
+    "tipo_Entidad": {
+     "type": "integer",
+     "format": "int32"
+    }
+   }
+  },
+  "Cat_Contactos": {
+   "id": "Cat_Contactos",
+   "type": "object",
+   "properties": {
+    "id_Obra": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_Persona": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_Poryecto": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_cat_contactos": {
+     "type": "string",
+     "format": "int64"
+    }
+   }
+  },
+  "Cat_Personal": {
+   "id": "Cat_Personal",
+   "type": "object",
+   "properties": {
+    "descipcion": {
+     "type": "string"
+    },
+    "id_Tipo_Personal": {
+     "type": "string",
+     "format": "int64"
+    },
+    "tipo_Personal": {
+     "type": "string"
+    },
+    "visible": {
+     "type": "boolean"
+    }
+   }
+  },
+  "Cat_Tipo_Empresa": {
+   "id": "Cat_Tipo_Empresa",
+   "type": "object",
+   "properties": {
+    "descipcion": {
+     "type": "string"
+    },
+    "id_Tipo_Empresa": {
+     "type": "string",
+     "format": "int64"
+    },
+    "tipo_Empresa": {
+     "type": "string"
+    }
+   }
+  },
+  "Cat_Tipo_Maquinaria": {
+   "id": "Cat_Tipo_Maquinaria",
+   "type": "object",
+   "properties": {
+    "descripcion": {
+     "type": "string"
+    },
+    "id_tipo_Maquinaria": {
+     "type": "string",
+     "format": "int64"
+    },
+    "tipo_Maquinaria": {
+     "type": "string"
+    }
+   }
+  },
+  "Cat_Tipo_Presona": {
+   "id": "Cat_Tipo_Presona",
+   "type": "object",
+   "properties": {
+    "descipcion": {
+     "type": "string"
+    },
+    "id_Tipo_Persona": {
+     "type": "string",
+     "format": "int64"
+    },
+    "tipo_Persona": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Aditivas_Deductivas": {
+   "id": "CollectionResponse_Aditivas_Deductivas",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Aditivas_Deductivas"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Avance_Financiero": {
+   "id": "CollectionResponse_Avance_Financiero",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Avance_Financiero"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Avance_Fisico": {
+   "id": "CollectionResponse_Avance_Fisico",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Avance_Fisico"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Cat_Contactos": {
+   "id": "CollectionResponse_Cat_Contactos",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Cat_Contactos"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Cat_Personal": {
+   "id": "CollectionResponse_Cat_Personal",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Cat_Personal"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Cat_Tipo_Empresa": {
+   "id": "CollectionResponse_Cat_Tipo_Empresa",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Cat_Tipo_Empresa"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Cat_Tipo_Maquinaria": {
+   "id": "CollectionResponse_Cat_Tipo_Maquinaria",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Cat_Tipo_Maquinaria"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Cat_Tipo_Presona": {
+   "id": "CollectionResponse_Cat_Tipo_Presona",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Cat_Tipo_Presona"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Concepto": {
+   "id": "CollectionResponse_Concepto",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Concepto"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_DeviceInfo": {
+   "id": "CollectionResponse_DeviceInfo",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "DeviceInfo"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Directivo_Proyecto": {
+   "id": "CollectionResponse_Directivo_Proyecto",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Directivo_Proyecto"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Directorio": {
+   "id": "CollectionResponse_Directorio",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Directorio"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Empresa": {
+   "id": "CollectionResponse_Empresa",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Empresa"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Estimacion": {
+   "id": "CollectionResponse_Estimacion",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Estimacion"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Maquinaria": {
+   "id": "CollectionResponse_Maquinaria",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Maquinaria"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_MessageData": {
+   "id": "CollectionResponse_MessageData",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "MessageData"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Multimedia": {
+   "id": "CollectionResponse_Multimedia",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Multimedia"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Notas": {
+   "id": "CollectionResponse_Notas",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Notas"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Obra": {
+   "id": "CollectionResponse_Obra",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Obra"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Org_Goubernamental": {
+   "id": "CollectionResponse_Org_Goubernamental",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Org_Goubernamental"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Persona": {
+   "id": "CollectionResponse_Persona",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Persona"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Programa": {
+   "id": "CollectionResponse_Programa",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Programa"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Proyecto": {
+   "id": "CollectionResponse_Proyecto",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Proyecto"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_ProyectoDelDirectivo": {
+   "id": "CollectionResponse_ProyectoDelDirectivo",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "ProyectoDelDirectivo"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Push": {
+   "id": "CollectionResponse_Push",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Push"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Ref_calendarizacion": {
+   "id": "CollectionResponse_Ref_calendarizacion",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Ref_calendarizacion"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_RepMaquinariaCatMaquinaria": {
+   "id": "CollectionResponse_RepMaquinariaCatMaquinaria",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "RepMaquinariaCatMaquinaria"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_RepoPersonalCatPersonal": {
+   "id": "CollectionResponse_RepoPersonalCatPersonal",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "RepoPersonalCatPersonal"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_ReporteDiario": {
+   "id": "CollectionResponse_ReporteDiario",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "ReporteDiario"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Reportsmodel": {
+   "id": "CollectionResponse_Reportsmodel",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Reportsmodel"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Sincronizacion": {
+   "id": "CollectionResponse_Sincronizacion",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Sincronizacion"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Ubicaciones": {
+   "id": "CollectionResponse_Ubicaciones",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Ubicaciones"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Usuario": {
+   "id": "CollectionResponse_Usuario",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Usuario"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "CollectionResponse_Xmpp": {
+   "id": "CollectionResponse_Xmpp",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "$ref": "Xmpp"
+     }
+    },
+    "nextPageToken": {
+     "type": "string"
+    }
+   }
+  },
+  "Concepto": {
+   "id": "Concepto",
+   "type": "object",
+   "properties": {
+    "cantidadAvance": {
+     "type": "number",
+     "format": "double"
+    },
+    "cantidadTotal": {
+     "type": "number",
+     "format": "double"
+    },
+    "clave": {
+     "type": "string"
+    },
+    "descripcion": {
+     "$ref": "Text"
+    },
+    "fecha_Fin": {
+     "type": "string"
+    },
+    "fecha_Inicio": {
+     "type": "string"
+    },
+    "id_Concepto": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_Obra": {
+     "type": "string",
+     "format": "int64"
+    },
+    "importe": {
+     "type": "number",
+     "format": "double"
+    },
+    "padre": {
+     "type": "string",
+     "format": "int64"
+    },
+    "precioUnitario": {
+     "type": "number",
+     "format": "double"
+    },
+    "unidadMedida": {
+     "type": "string"
+    },
+    "visible": {
+     "type": "boolean"
+    }
+   }
+  },
+  "DeviceInfo": {
+   "id": "DeviceInfo",
+   "type": "object",
+   "properties": {
+    "deviceInformation": {
+     "type": "string"
+    },
+    "deviceRegistrationID": {
+     "type": "string"
+    },
+    "timestamp": {
+     "type": "string",
+     "format": "int64"
+    }
+   }
+  },
+  "Directivo_Proyecto": {
+   "id": "Directivo_Proyecto",
+   "type": "object",
+   "properties": {
+    "id": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_directivo": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_proyecto": {
+     "type": "string",
+     "format": "int64"
+    }
+   }
+  },
+  "Directorio": {
+   "id": "Directorio",
+   "type": "object",
+   "properties": {
+    "arregloPersonasId": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "idDirectorio": {
+     "type": "string",
+     "format": "int64"
+    },
+    "idReferencia": {
+     "type": "string",
+     "format": "int64"
+    },
+    "tipoReferencia": {
+     "type": "string",
+     "format": "int64"
+    }
+   }
+  },
+  "Empresa": {
+   "id": "Empresa",
+   "type": "object",
+   "properties": {
+    "calle": {
+     "type": "string"
+    },
+    "codi_Postal": {
+     "type": "integer",
+     "format": "int32"
+    },
+    "colonia": {
+     "type": "string"
+    },
+    "del_o_Mun": {
+     "type": "string"
+    },
+    "entidad": {
+     "type": "string"
+    },
+    "id_Empresa": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_tipo_empresa": {
+     "type": "string",
+     "format": "int64"
+    },
+    "imss": {
+     "type": "string"
+    },
+    "logo": {
+     "type": "string"
+    },
+    "nombre": {
+     "type": "string"
+    },
+    "num_Ext": {
+     "type": "string"
+    },
+    "num_Int": {
+     "type": "string"
+    },
+    "rfc": {
+     "type": "string"
+    },
+    "siglas": {
+     "type": "string"
+    },
+    "visible": {
+     "type": "boolean"
+    }
+   }
+  },
+  "Estimacion": {
+   "id": "Estimacion",
+   "type": "object",
+   "properties": {
+    "cantidadAutorizada": {
+     "type": "string",
+     "format": "int64"
+    },
+    "email": {
+     "type": "string"
+    },
+    "estimacion": {
+     "type": "string",
+     "format": "int64"
+    },
+    "fechaEstimacion": {
+     "type": "string"
+    },
+    "fechaFin": {
+     "type": "string"
+    },
+    "fechaInicio": {
+     "type": "string"
+    },
+    "idConcepto": {
+     "type": "string",
+     "format": "int64"
+    },
+    "idObra": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_Estimacion": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_dispo": {
+     "type": "string",
+     "format": "int64"
+    },
+    "numero": {
+     "type": "string",
+     "format": "int64"
+    }
+   }
+  },
+  "Key": {
+   "id": "Key",
+   "type": "object",
+   "properties": {
+    "appId": {
+     "type": "string"
+    },
+    "complete": {
+     "type": "boolean"
+    },
+    "id": {
+     "type": "string",
+     "format": "int64"
+    },
+    "kind": {
+     "type": "string"
+    },
+    "name": {
+     "type": "string"
+    },
+    "namespace": {
+     "type": "string"
+    },
+    "parent": {
+     "$ref": "Key"
+    }
+   }
+  },
+  "Maquinaria": {
+   "id": "Maquinaria",
+   "type": "object",
+   "properties": {
+    "descripcion": {
+     "type": "string"
+    },
+    "familia": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_Familia": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_Maquinaria": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_tipo_Maquinaria": {
+     "type": "string",
+     "format": "int64"
+    },
+    "nombre": {
+     "type": "string"
+    },
+    "path_Imagen": {
+     "type": "string"
+    },
+    "visible": {
+     "type": "boolean"
+    }
+   }
+  },
+  "MessageData": {
+   "id": "MessageData",
+   "type": "object",
+   "properties": {
+    "key": {
+     "$ref": "Key"
+    },
+    "message": {
+     "type": "string"
+    },
+    "timestamp": {
+     "type": "string",
+     "format": "int64"
+    }
+   }
+  },
+  "Multimedia": {
+   "id": "Multimedia",
+   "type": "object",
+   "properties": {
+    "descripcion": {
+     "type": "string"
+    },
+    "fecha": {
+     "type": "string"
+    },
+    "formato": {
+     "type": "string",
+     "format": "int64"
+    },
+    "idMultimedia": {
+     "type": "string",
+     "format": "int64"
+    },
+    "idReferencia": {
+     "type": "string",
+     "format": "int64"
+    },
+    "path": {
+     "type": "string"
+    },
+    "tipoArchivo": {
+     "type": "integer",
+     "format": "int32"
+    },
+    "tipoReferencia": {
+     "type": "integer",
+     "format": "int32"
+    }
+   }
+  },
+  "Notas": {
+   "id": "Notas",
+   "type": "object",
+   "properties": {
+    "descripcion": {
+     "type": "string"
+    },
+    "email": {
+     "type": "string"
+    },
+    "fecha": {
+     "type": "string"
+    },
+    "idDispo": {
+     "type": "string",
+     "format": "int64"
+    },
+    "idRepoNotas": {
+     "type": "string",
+     "format": "int64"
+    },
+    "idReporteDiario": {
+     "type": "string",
+     "format": "int64"
+    },
+    "titulo": {
+     "type": "string"
+    }
+   }
+  },
+  "NumberCollection": {
+   "id": "NumberCollection",
+   "type": "object",
+   "properties": {
+    "items": {
+     "type": "array",
+     "items": {
+      "type": "number",
+      "format": "double"
+     }
+    }
+   }
+  },
+  "Obra": {
+   "id": "Obra",
+   "type": "object",
+   "properties": {
+    "anticipo": {
+     "type": "string"
+    },
+    "area": {
+     "type": "string"
+    },
+    "borrador": {
+     "type": "string"
+    },
+    "cargoRevision1": {
+     "type": "string"
+    },
+    "cargoRevision2": {
+     "type": "string"
+    },
+    "cargoVoBo": {
+     "type": "string"
+    },
+    "descripcion": {
+     "type": "string"
+    },
+    "direccion": {
+     "type": "string"
+    },
+    "entidadFederativa": {
+     "type": "string"
+    },
+    "fechaContrato": {
+     "type": "string"
+    },
+    "fechaFianzaAnticipo": {
+     "type": "string"
+    },
+    "fechaFianzaCumplimiento": {
+     "type": "string"
+    },
+    "fechaInicioContrato": {
+     "type": "string"
+    },
+    "fechaTerminoContrato": {
+     "type": "string"
+    },
+    "idDependencia": {
+     "type": "string",
+     "format": "int64"
+    },
+    "idGobierno": {
+     "type": "string",
+     "format": "int64"
+    },
+    "idSecretaria": {
+     "type": "string",
+     "format": "int64"
+    },
+    "idUsuario": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_EmpresaContratista": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_Obra": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_Poyecto": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_ubicacion": {
+     "type": "string",
+     "format": "int64"
+    },
+    "importeAjusteCostos": {
+     "type": "number",
+     "format": "double"
+    },
+    "importeContratoSinIVA": {
+     "type": "number",
+     "format": "double"
+    },
+    "importeConvenioAmpliacion": {
+     "type": "number",
+     "format": "double"
+    },
+    "importeConvenioReduccion": {
+     "type": "number",
+     "format": "double"
+    },
+    "importeFiscal1SinIVA": {
+     "type": "number",
+     "format": "double"
+    },
+    "limite_Desvio": {
+     "type": "integer",
+     "format": "int32"
+    },
+    "montoFianzaAnticipo": {
+     "type": "number",
+     "format": "double"
+    },
+    "montoFianzaCumplimiento": {
+     "type": "number",
+     "format": "double"
+    },
+    "noContrato": {
+     "type": "string"
+    },
+    "noFianzaAnticipo": {
+     "type": "string"
+    },
+    "noFianzaCumplimiento": {
+     "type": "string"
+    },
+    "nombre": {
+     "type": "string"
+    },
+    "nombreEjercicioFiscal1": {
+     "type": "string"
+    },
+    "nombreQuienAutoriza": {
+     "type": "string"
+    },
+    "nombreRevision1": {
+     "type": "string"
+    },
+    "nombreRevision2": {
+     "type": "string"
+    },
+    "nombreVoBo": {
+     "type": "string"
+    },
+    "partidaPresupuestal": {
+     "type": "string"
+    },
+    "periodoEjucionDias": {
+     "type": "integer",
+     "format": "int32"
+    },
+    "porcentajeDesvio": {
+     "type": "number",
+     "format": "double"
+    },
+    "rfc": {
+     "type": "string"
+    },
+    "subdireccion": {
+     "type": "string"
+    },
+    "superintendente": {
+     "type": "string"
+    },
+    "tipoContrato": {
+     "type": "string"
+    },
+    "visible": {
+     "type": "boolean"
+    }
+   }
+  },
+  "ObraUtil": {
+   "id": "ObraUtil",
+   "type": "object",
+   "properties": {
+    "avanceFinanciero": {
+     "type": "array",
+     "items": {
+      "$ref": "Avance_Financiero"
+     }
+    },
+    "avanceFisico": {
+     "type": "array",
+     "items": {
+      "$ref": "Avance_Fisico"
+     }
+    },
+    "obra": {
+     "$ref": "Obra"
+    },
+    "reportesDiarios": {
+     "type": "array",
+     "items": {
+      "$ref": "ReporteDiarioUtil"
+     }
+    }
+   }
+  },
+  "Org_Goubernamental": {
+   "id": "Org_Goubernamental",
+   "type": "object",
+   "properties": {
+    "id_Organizacion": {
+     "type": "string",
+     "format": "int64"
+    },
+    "logotipo": {
+     "type": "string"
+    },
+    "nombre_Oficial": {
+     "type": "string"
+    },
+    "nombre_corto": {
+     "type": "string"
+    },
+    "sitio_Web": {
+     "type": "string"
+    }
+   }
+  },
+  "Persona": {
+   "id": "Persona",
+   "type": "object",
+   "properties": {
+    "ap_Materno": {
+     "type": "string"
+    },
+    "ap_Paterno": {
+     "type": "string"
+    },
+    "cargo": {
+     "type": "string"
+    },
+    "cedulaProfesional": {
+     "type": "string"
+    },
+    "direccion": {
+     "type": "string"
+    },
+    "emails": {
+     "type": "string"
+    },
+    "fecha_Nacimiento": {
+     "type": "string"
+    },
+    "fotografia": {
+     "type": "string"
+    },
+    "idEmpresa": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_Persona": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_Tipo_Persona": {
+     "type": "string",
+     "format": "int64"
+    },
+    "iniciales": {
+     "type": "string"
+    },
+    "nombre": {
+     "type": "string"
+    },
+    "radios": {
+     "type": "string"
+    },
+    "rfc": {
+     "type": "string"
+    },
+    "telefonos": {
+     "type": "string"
+    },
+    "tituloProfesional": {
+     "type": "string"
+    },
+    "usuarioSkype": {
+     "type": "string"
+    },
+    "visible": {
+     "type": "boolean"
+    }
+   }
+  },
+  "Programa": {
+   "id": "Programa",
+   "type": "object",
+   "properties": {
+    "fecha": {
+     "type": "string"
+    },
+    "id_programa": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_referencia": {
+     "type": "string",
+     "format": "int64"
+    },
+    "porcentaje_avance": {
+     "type": "number",
+     "format": "double"
+    },
+    "tipo_avance": {
+     "type": "integer",
+     "format": "int32"
+    },
+    "tipo_entidad": {
+     "type": "integer",
+     "format": "int32"
+    }
+   }
+  },
+  "Proyecto": {
+   "id": "Proyecto",
+   "type": "object",
+   "properties": {
+    "descripcion": {
+     "type": "string"
+    },
+    "id_Proyecto": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_dependencia": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_secretaria": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_ubicacion": {
+     "type": "string",
+     "format": "int64"
+    },
+    "nombre_corto": {
+     "type": "string"
+    },
+    "nombre_largo": {
+     "type": "string"
+    }
+   }
+  },
+  "ProyectoDelDirectivo": {
+   "id": "ProyectoDelDirectivo",
+   "type": "object",
+   "properties": {
+    "avanceFinanciero": {
+     "type": "array",
+     "items": {
+      "$ref": "Avance_Financiero"
+     }
+    },
+    "avanceFisico": {
+     "type": "array",
+     "items": {
+      "$ref": "Avance_Fisico"
+     }
+    },
+    "id": {
+     "type": "string",
+     "format": "int64"
+    },
+    "obras": {
+     "type": "array",
+     "items": {
+      "$ref": "ObraUtil"
+     }
+    },
+    "proyecto": {
+     "$ref": "Proyecto"
+    }
+   }
+  },
+  "Push": {
+   "id": "Push",
+   "type": "object",
+   "properties": {
+    "id_Propietario": {
+     "type": "string",
+     "format": "int64"
+    },
+    "payload": {
+     "type": "string"
+    },
+    "to": {
+     "type": "string"
+    }
+   }
+  },
+  "Ref_calendarizacion": {
+   "id": "Ref_calendarizacion",
+   "type": "object",
+   "properties": {
+    "id_ref_Calendarizaion": {
+     "type": "string",
+     "format": "int64"
+    },
+    "path": {
+     "type": "string"
+    }
+   }
+  },
+  "RepMaquinariaCatMaquinaria": {
+   "id": "RepMaquinariaCatMaquinaria",
+   "type": "object",
+   "properties": {
+    "cantidad": {
+     "type": "string",
+     "format": "int64"
+    },
+    "email": {
+     "type": "string"
+    },
+    "idCatMaquinaria": {
+     "type": "string",
+     "format": "int64"
+    },
+    "idDispo": {
+     "type": "string",
+     "format": "int64"
+    },
+    "idRepMaquinaria": {
+     "type": "string",
+     "format": "int64"
+    },
+    "idReporteDiario": {
+     "type": "string",
+     "format": "int64"
+    }
+   }
+  },
+  "RepoPersonalCatPersonal": {
+   "id": "RepoPersonalCatPersonal",
+   "type": "object",
+   "properties": {
+    "cantidad": {
+     "type": "string",
+     "format": "int64"
+    },
+    "email": {
+     "type": "string"
+    },
+    "idCatPersonal": {
+     "type": "string",
+     "format": "int64"
+    },
+    "idDispo": {
+     "type": "string",
+     "format": "int64"
+    },
+    "idPropietario": {
+     "type": "string",
+     "format": "int64"
+    },
+    "idReporteDiario": {
+     "type": "string",
+     "format": "int64"
+    }
+   }
+  },
+  "ReporteDiario": {
+   "id": "ReporteDiario",
+   "type": "object",
+   "properties": {
+    "clave": {
+     "type": "integer",
+     "format": "int32"
+    },
+    "email": {
+     "type": "string"
+    },
+    "fechaReporteDiario": {
+     "type": "string"
+    },
+    "idDispo": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_Minuta": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_Notas": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_Obra": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_RMaquinariaEquipo": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_RPersonal": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_ReporteDiario": {
+     "type": "string",
+     "format": "int64"
+    }
+   }
+  },
+  "ReporteDiarioUtil": {
+   "id": "ReporteDiarioUtil",
+   "type": "object",
+   "properties": {
+    "repMaquinariaCatMaquinaria": {
+     "type": "array",
+     "items": {
+      "$ref": "RepMaquinariaCatMaquinaria"
+     }
+    },
+    "reporteDiario": {
+     "$ref": "ReporteDiario"
+    }
+   }
+  },
+  "Reportsmodel": {
+   "id": "Reportsmodel",
+   "type": "object",
+   "properties": {
+    "anticipo_Contrato": {
+     "type": "number",
+     "format": "double"
+    },
+    "avance_Financiero_Reportado": {
+     "type": "number",
+     "format": "double"
+    },
+    "avance_Fisico_Reportado": {
+     "type": "number",
+     "format": "double"
+    },
+    "conveio_Numero": {
+     "type": "string"
+    },
+    "direccion_Adscipcion": {
+     "type": "string"
+    },
+    "fecha_Contrato": {
+     "type": "string"
+    },
+    "fecha_Convenio": {
+     "type": "string"
+    },
+    "fecha_Inicio": {
+     "type": "string"
+    },
+    "fecha_Termino": {
+     "type": "string"
+    },
+    "idConceptos": {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "format": "int64"
+     }
+    },
+    "idConsecutivo": {
+     "type": "string",
+     "format": "int64"
+    },
+    "idEmpresa_Comtratista": {
+     "type": "string",
+     "format": "int64"
+    },
+    "idMultimedia": {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "format": "int64"
+     }
+    },
+    "idObra": {
+     "type": "string",
+     "format": "int64"
+    },
+    "idProyecto": {
+     "type": "string",
+     "format": "int64"
+    },
+    "idReporte": {
+     "type": "string",
+     "format": "int64"
+    },
+    "idubicacion": {
+     "type": "string",
+     "format": "int64"
+    },
+    "importe_Acunulado": {
+     "type": "number",
+     "format": "double"
+    },
+    "importe_Contrato": {
+     "type": "number",
+     "format": "double"
+    },
+    "importe_Convenio": {
+     "type": "number",
+     "format": "double"
+    },
+    "nombre_Contrato": {
+     "type": "string"
+    },
+    "numero_Contrato": {
+     "type": "string"
+    },
+    "numero_informe": {
+     "type": "string"
+    },
+    "periodo_Ejecucion": {
+     "type": "integer",
+     "format": "int32"
+    },
+    "residente_Obra": {
+     "type": "string"
+    },
+    "saldo_Contrato": {
+     "type": "number",
+     "format": "double"
+    },
+    "supervisor_Obra": {
+     "type": "string"
+    }
+   }
+  },
+  "Sincronizacion": {
+   "id": "Sincronizacion",
+   "type": "object",
+   "properties": {
+    "accion": {
+     "type": "string",
+     "format": "int64"
+    },
+    "entidad": {
+     "type": "string"
+    },
+    "idRegistro": {
+     "type": "string",
+     "format": "int64"
+    },
+    "idSincronizacion": {
+     "type": "string",
+     "format": "int64"
+    },
+    "status": {
+     "type": "string",
+     "format": "int64"
+    }
+   }
+  },
+  "Text": {
+   "id": "Text",
+   "type": "object",
+   "properties": {
+    "value": {
+     "type": "string"
+    }
+   }
+  },
+  "Ubicaciones": {
+   "id": "Ubicaciones",
+   "type": "object",
+   "properties": {
+    "id_Ubicacion": {
+     "type": "string",
+     "format": "int64"
+    },
+    "ubicacion": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    }
+   }
+  },
+  "Usuario": {
+   "id": "Usuario",
+   "type": "object",
+   "properties": {
+    "contrasena": {
+     "type": "string"
+    },
+    "id_Persona": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_Propietario": {
+     "type": "string",
+     "format": "int64"
+    },
+    "id_Tipo_Persona": {
+     "type": "string",
+     "format": "int64"
+    },
+    "usuario": {
+     "type": "string"
+    },
+    "visible": {
+     "type": "boolean"
+    }
+   }
+  },
+  "Xmpp": {
+   "id": "Xmpp",
+   "type": "object",
+   "properties": {
+    "idXmpp": {
+     "type": "string",
+     "format": "int64"
+    },
+    "mensaje": {
+     "type": "string"
+    }
+   }
+  },
+  "_any": {
+   "id": "_any",
+   "type": "any"
+  }
+ },
+ "methods": {
+  "calculaAvance": {
+   "id": "communicationchannel.calculaAvance",
+   "path": "calculaAvance/{id_referencia}/{tipo_referencia}/{tipo_calculo}",
+   "httpMethod": "POST",
+   "parameters": {
+    "id_referencia": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    },
+    "tipo_calculo": {
+     "type": "integer",
+     "required": true,
+     "format": "int32",
+     "location": "path"
+    },
+    "tipo_referencia": {
+     "type": "integer",
+     "required": true,
+     "format": "int32",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id_referencia",
+    "tipo_referencia",
+    "tipo_calculo"
+   ],
+   "response": {
+    "$ref": "_any"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getAditivas_Deductivas": {
+   "id": "communicationchannel.getAditivas_Deductivas",
+   "path": "aditivas_deductivas/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Aditivas_Deductivas"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getAvance_Financiero": {
+   "id": "communicationchannel.getAvance_Financiero",
+   "path": "avance_financiero/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Avance_Financiero"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getCat_Contactos": {
+   "id": "communicationchannel.getCat_Contactos",
+   "path": "cat_contactos/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Cat_Contactos"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getCat_Personal": {
+   "id": "communicationchannel.getCat_Personal",
+   "path": "cat_personal/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Cat_Personal"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getCat_Tipo_Empresa": {
+   "id": "communicationchannel.getCat_Tipo_Empresa",
+   "path": "cat_tipo_empresa/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Cat_Tipo_Empresa"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getCat_Tipo_Maquinaria": {
+   "id": "communicationchannel.getCat_Tipo_Maquinaria",
+   "path": "cat_tipo_maquinaria/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Cat_Tipo_Maquinaria"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getCat_Tipo_Presona": {
+   "id": "communicationchannel.getCat_Tipo_Presona",
+   "path": "cat_tipo_presona/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Cat_Tipo_Presona"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getConcepto": {
+   "id": "communicationchannel.getConcepto",
+   "path": "concepto/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Concepto"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getDeviceInfo": {
+   "id": "communicationchannel.getDeviceInfo",
+   "path": "deviceinfo/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "DeviceInfo"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getDirectivo_Proyecto": {
+   "id": "communicationchannel.getDirectivo_Proyecto",
+   "path": "directivo_proyecto/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Directivo_Proyecto"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getDirectorio": {
+   "id": "communicationchannel.getDirectorio",
+   "path": "directorio/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Directorio"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getEmpresa": {
+   "id": "communicationchannel.getEmpresa",
+   "path": "empresa/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Empresa"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getEstimacion": {
+   "id": "communicationchannel.getEstimacion",
+   "path": "estimacion/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Estimacion"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getMaquinaria": {
+   "id": "communicationchannel.getMaquinaria",
+   "path": "maquinaria/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Maquinaria"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getMultimedia": {
+   "id": "communicationchannel.getMultimedia",
+   "path": "multimedia/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Multimedia"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getNotas": {
+   "id": "communicationchannel.getNotas",
+   "path": "notas/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Notas"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getObra": {
+   "id": "communicationchannel.getObra",
+   "path": "obra/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Obra"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getOrg_Goubernamental": {
+   "id": "communicationchannel.getOrg_Goubernamental",
+   "path": "org_goubernamental/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Org_Goubernamental"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getPersona": {
+   "id": "communicationchannel.getPersona",
+   "path": "persona/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Persona"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getPrograma": {
+   "id": "communicationchannel.getPrograma",
+   "path": "programa/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Programa"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getProyecto": {
+   "id": "communicationchannel.getProyecto",
+   "path": "proyecto/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Proyecto"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getPush": {
+   "id": "communicationchannel.getPush",
+   "path": "push/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Push"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getRef_calendarizacion": {
+   "id": "communicationchannel.getRef_calendarizacion",
+   "path": "ref_calendarizacion/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Ref_calendarizacion"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getRepMaquinariaCatMaquinaria": {
+   "id": "communicationchannel.getRepMaquinariaCatMaquinaria",
+   "path": "repmaquinariacatmaquinaria/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "RepMaquinariaCatMaquinaria"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getRepoPersonalCatPersonal": {
+   "id": "communicationchannel.getRepoPersonalCatPersonal",
+   "path": "repopersonalcatpersonal/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "RepoPersonalCatPersonal"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getReportsmodel": {
+   "id": "communicationchannel.getReportsmodel",
+   "path": "reportsmodel/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Reportsmodel"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getSincronizacion": {
+   "id": "communicationchannel.getSincronizacion",
+   "path": "sincronizacion/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Sincronizacion"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getTendencia": {
+   "id": "communicationchannel.getTendencia",
+   "path": "doublecollection",
+   "httpMethod": "GET",
+   "parameters": {
+    "Tipo_Entidad": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    },
+    "id_referencia": {
+     "type": "string",
+     "format": "int64",
+     "location": "query"
+    }
+   },
+   "response": {
+    "$ref": "NumberCollection"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getUbicaciones": {
+   "id": "communicationchannel.getUbicaciones",
+   "path": "ubicaciones/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Ubicaciones"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getUsuario": {
+   "id": "communicationchannel.getUsuario",
+   "path": "usuario/{id}/{user}/{contrasena}",
+   "httpMethod": "GET",
+   "parameters": {
+    "contrasena": {
+     "type": "string",
+     "required": true,
+     "location": "path"
+    },
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    },
+    "user": {
+     "type": "string",
+     "required": true,
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id",
+    "user",
+    "contrasena"
+   ],
+   "response": {
+    "$ref": "Usuario"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "getXmpp": {
+   "id": "communicationchannel.getXmpp",
+   "path": "xmpp/{id}",
+   "httpMethod": "GET",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "response": {
+    "$ref": "Xmpp"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertAditivas_Deductivas": {
+   "id": "communicationchannel.insertAditivas_Deductivas",
+   "path": "aditivas_deductivas",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Aditivas_Deductivas",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Aditivas_Deductivas"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertAvance_Financiero": {
+   "id": "communicationchannel.insertAvance_Financiero",
+   "path": "avance_financiero",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Avance_Financiero",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Avance_Financiero"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertAvance_Fisico": {
+   "id": "communicationchannel.insertAvance_Fisico",
+   "path": "avance_fisico",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Avance_Fisico",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Avance_Fisico"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertCat_Contactos": {
+   "id": "communicationchannel.insertCat_Contactos",
+   "path": "cat_contactos",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Cat_Contactos",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Cat_Contactos"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertCat_Personal": {
+   "id": "communicationchannel.insertCat_Personal",
+   "path": "cat_personal",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Cat_Personal",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Cat_Personal"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertCat_Tipo_Empresa": {
+   "id": "communicationchannel.insertCat_Tipo_Empresa",
+   "path": "cat_tipo_empresa",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Cat_Tipo_Empresa",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Cat_Tipo_Empresa"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertCat_Tipo_Maquinaria": {
+   "id": "communicationchannel.insertCat_Tipo_Maquinaria",
+   "path": "cat_tipo_maquinaria",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Cat_Tipo_Maquinaria",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Cat_Tipo_Maquinaria"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertCat_Tipo_Presona": {
+   "id": "communicationchannel.insertCat_Tipo_Presona",
+   "path": "cat_tipo_presona",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Cat_Tipo_Presona",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Cat_Tipo_Presona"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertConcepto": {
+   "id": "communicationchannel.insertConcepto",
+   "path": "concepto",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Concepto",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Concepto"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertDeviceInfo": {
+   "id": "communicationchannel.insertDeviceInfo",
+   "path": "deviceinfo",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "DeviceInfo",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "DeviceInfo"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertDirectivo_Proyecto": {
+   "id": "communicationchannel.insertDirectivo_Proyecto",
+   "path": "directivo_proyecto",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Directivo_Proyecto",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Directivo_Proyecto"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertDirectorio": {
+   "id": "communicationchannel.insertDirectorio",
+   "path": "directorio",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Directorio",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Directorio"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertEmpresa": {
+   "id": "communicationchannel.insertEmpresa",
+   "path": "empresa",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Empresa",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Empresa"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertEstimacion": {
+   "id": "communicationchannel.insertEstimacion",
+   "path": "estimacion",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Estimacion",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Estimacion"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertMaquinaria": {
+   "id": "communicationchannel.insertMaquinaria",
+   "path": "maquinaria",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Maquinaria",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Maquinaria"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertMultimedia": {
+   "id": "communicationchannel.insertMultimedia",
+   "path": "multimedia",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Multimedia",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Multimedia"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertNotas": {
+   "id": "communicationchannel.insertNotas",
+   "path": "notas",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Notas",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Notas"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertObra": {
+   "id": "communicationchannel.insertObra",
+   "path": "obra",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Obra",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Obra"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertOrg_Goubernamental": {
+   "id": "communicationchannel.insertOrg_Goubernamental",
+   "path": "org_goubernamental",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Org_Goubernamental",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Org_Goubernamental"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertPersona": {
+   "id": "communicationchannel.insertPersona",
+   "path": "persona",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Persona",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Persona"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertProyecto": {
+   "id": "communicationchannel.insertProyecto",
+   "path": "proyecto",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Proyecto",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Proyecto"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertPush": {
+   "id": "communicationchannel.insertPush",
+   "path": "push",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Push",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Push"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertRef_calendarizacion": {
+   "id": "communicationchannel.insertRef_calendarizacion",
+   "path": "ref_calendarizacion",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Ref_calendarizacion",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Ref_calendarizacion"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertRepMaquinariaCatMaquinaria": {
+   "id": "communicationchannel.insertRepMaquinariaCatMaquinaria",
+   "path": "repmaquinariacatmaquinaria",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "RepMaquinariaCatMaquinaria",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "RepMaquinariaCatMaquinaria"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertRepoPersonalCatPersonal": {
+   "id": "communicationchannel.insertRepoPersonalCatPersonal",
+   "path": "repopersonalcatpersonal",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "RepoPersonalCatPersonal",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "RepoPersonalCatPersonal"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertReporteDiario": {
+   "id": "communicationchannel.insertReporteDiario",
+   "path": "reportediario",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "ReporteDiario",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "ReporteDiario"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertReportsmodel": {
+   "id": "communicationchannel.insertReportsmodel",
+   "path": "reportsmodel",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Reportsmodel",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Reportsmodel"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertSincronizacion": {
+   "id": "communicationchannel.insertSincronizacion",
+   "path": "sincronizacion",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Sincronizacion",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Sincronizacion"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertUbicaciones": {
+   "id": "communicationchannel.insertUbicaciones",
+   "path": "ubicaciones",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Ubicaciones",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Ubicaciones"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertUsuario": {
+   "id": "communicationchannel.insertUsuario",
+   "path": "usuario",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Usuario",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Usuario"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "insertXmpp": {
+   "id": "communicationchannel.insertXmpp",
+   "path": "xmpp",
+   "httpMethod": "POST",
+   "request": {
+    "$ref": "Xmpp",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Xmpp"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listAditivas_Deductivas": {
+   "id": "communicationchannel.listAditivas_Deductivas",
+   "path": "aditivas_deductivas",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "response": {
+    "$ref": "CollectionResponse_Aditivas_Deductivas"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listAvance_Financiero": {
+   "id": "communicationchannel.listAvance_Financiero",
+   "path": "avance_financiero/{id_referencia}/{Tipo_Entidad}",
+   "httpMethod": "GET",
+   "parameters": {
+    "Tipo_Entidad": {
+     "type": "integer",
+     "required": true,
+     "format": "int32",
+     "location": "path"
+    },
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "id_referencia": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "parameterOrder": [
+    "id_referencia",
+    "Tipo_Entidad"
+   ],
+   "response": {
+    "$ref": "CollectionResponse_Avance_Financiero"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listAvance_Fisico": {
+   "id": "communicationchannel.listAvance_Fisico",
+   "path": "avance_fisico/{id_referencia}/{Tipo_Entidad}",
+   "httpMethod": "GET",
+   "parameters": {
+    "Tipo_Entidad": {
+     "type": "integer",
+     "required": true,
+     "format": "int32",
+     "location": "path"
+    },
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "id_referencia": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "parameterOrder": [
+    "id_referencia",
+    "Tipo_Entidad"
+   ],
+   "response": {
+    "$ref": "CollectionResponse_Avance_Fisico"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listCat_Contactos": {
+   "id": "communicationchannel.listCat_Contactos",
+   "path": "cat_contactos",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "response": {
+    "$ref": "CollectionResponse_Cat_Contactos"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listCat_Personal": {
+   "id": "communicationchannel.listCat_Personal",
+   "path": "cat_personal",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "response": {
+    "$ref": "CollectionResponse_Cat_Personal"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listCat_Tipo_Empresa": {
+   "id": "communicationchannel.listCat_Tipo_Empresa",
+   "path": "cat_tipo_empresa",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "response": {
+    "$ref": "CollectionResponse_Cat_Tipo_Empresa"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listCat_Tipo_Maquinaria": {
+   "id": "communicationchannel.listCat_Tipo_Maquinaria",
+   "path": "cat_tipo_maquinaria",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "response": {
+    "$ref": "CollectionResponse_Cat_Tipo_Maquinaria"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listCat_Tipo_Presona": {
+   "id": "communicationchannel.listCat_Tipo_Presona",
+   "path": "cat_tipo_presona",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "response": {
+    "$ref": "CollectionResponse_Cat_Tipo_Presona"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listConcepto": {
+   "id": "communicationchannel.listConcepto",
+   "path": "concepto/{id_obra}/{def}",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "def": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    },
+    "id_obra": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "parameterOrder": [
+    "id_obra",
+    "def"
+   ],
+   "response": {
+    "$ref": "CollectionResponse_Concepto"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listDeviceInfo": {
+   "id": "communicationchannel.listDeviceInfo",
+   "path": "deviceinfo",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "response": {
+    "$ref": "CollectionResponse_DeviceInfo"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listDirectivo_Proyecto": {
+   "id": "communicationchannel.listDirectivo_Proyecto",
+   "path": "directivo_proyecto",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "directivo": {
+     "type": "string",
+     "format": "int64",
+     "location": "query"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "response": {
+    "$ref": "CollectionResponse_Directivo_Proyecto"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listDirectorio": {
+   "id": "communicationchannel.listDirectorio",
+   "path": "directorio/{tipoReferencia}/{idReferencia}",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "idReferencia": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    },
+    "tipoReferencia": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "tipoReferencia",
+    "idReferencia"
+   ],
+   "response": {
+    "$ref": "CollectionResponse_Directorio"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listEmpresa": {
+   "id": "communicationchannel.listEmpresa",
+   "path": "empresa",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "response": {
+    "$ref": "CollectionResponse_Empresa"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listEstimacion": {
+   "id": "communicationchannel.listEstimacion",
+   "path": "estimacion/{idObra}/{email}",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "email": {
+     "type": "string",
+     "required": true,
+     "location": "path"
+    },
+    "idObra": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "parameterOrder": [
+    "idObra",
+    "email"
+   ],
+   "response": {
+    "$ref": "CollectionResponse_Estimacion"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listMaquinaria": {
+   "id": "communicationchannel.listMaquinaria",
+   "path": "maquinaria",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "response": {
+    "$ref": "CollectionResponse_Maquinaria"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listMessages": {
+   "id": "communicationchannel.listMessages",
+   "path": "messagedata",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "response": {
+    "$ref": "CollectionResponse_MessageData"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listMultimedia": {
+   "id": "communicationchannel.listMultimedia",
+   "path": "multimedia/{tipoReferencia}/{idReferencia}/{tipoArchivo}",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "idReferencia": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    },
+    "tipoArchivo": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    },
+    "tipoReferencia": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "tipoReferencia",
+    "idReferencia",
+    "tipoArchivo"
+   ],
+   "response": {
+    "$ref": "CollectionResponse_Multimedia"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listNotas": {
+   "id": "communicationchannel.listNotas",
+   "path": "notas/{email}/{def}",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "def": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    },
+    "email": {
+     "type": "string",
+     "required": true,
+     "location": "path"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "parameterOrder": [
+    "email",
+    "def"
+   ],
+   "response": {
+    "$ref": "CollectionResponse_Notas"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listObra": {
+   "id": "communicationchannel.listObra",
+   "path": "obra/{idProyecto}/{idObra}/{email}",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "email": {
+     "type": "string",
+     "required": true,
+     "location": "path"
+    },
+    "idObra": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    },
+    "idProyecto": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "parameterOrder": [
+    "idProyecto",
+    "idObra",
+    "email"
+   ],
+   "response": {
+    "$ref": "CollectionResponse_Obra"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listOrg_Goubernamental": {
+   "id": "communicationchannel.listOrg_Goubernamental",
+   "path": "org_goubernamental",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "response": {
+    "$ref": "CollectionResponse_Org_Goubernamental"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listPersona": {
+   "id": "communicationchannel.listPersona",
+   "path": "persona",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "response": {
+    "$ref": "CollectionResponse_Persona"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listPrograma": {
+   "id": "communicationchannel.listPrograma",
+   "path": "programa",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "response": {
+    "$ref": "CollectionResponse_Programa"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listProyecto": {
+   "id": "communicationchannel.listProyecto",
+   "path": "proyecto",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "response": {
+    "$ref": "CollectionResponse_Proyecto"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listProyectoDelDirectivo": {
+   "id": "communicationchannel.listProyectoDelDirectivo",
+   "path": "proyectodeldirectivo/{directivo}",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "directivo": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "parameterOrder": [
+    "directivo"
+   ],
+   "response": {
+    "$ref": "CollectionResponse_ProyectoDelDirectivo"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listPush": {
+   "id": "communicationchannel.listPush",
+   "path": "push",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "response": {
+    "$ref": "CollectionResponse_Push"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listRef_calendarizacion": {
+   "id": "communicationchannel.listRef_calendarizacion",
+   "path": "ref_calendarizacion",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "response": {
+    "$ref": "CollectionResponse_Ref_calendarizacion"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listRepMaquinariaCatMaquinaria": {
+   "id": "communicationchannel.listRepMaquinariaCatMaquinaria",
+   "path": "repmaquinariacatmaquinaria/{idReporteDiario}/{email}",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "email": {
+     "type": "string",
+     "required": true,
+     "location": "path"
+    },
+    "idReporteDiario": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "parameterOrder": [
+    "idReporteDiario",
+    "email"
+   ],
+   "response": {
+    "$ref": "CollectionResponse_RepMaquinariaCatMaquinaria"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listRepoPersonalCatPersonal": {
+   "id": "communicationchannel.listRepoPersonalCatPersonal",
+   "path": "repopersonalcatpersonal/{email}/{def}",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "def": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    },
+    "email": {
+     "type": "string",
+     "required": true,
+     "location": "path"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "parameterOrder": [
+    "email",
+    "def"
+   ],
+   "response": {
+    "$ref": "CollectionResponse_RepoPersonalCatPersonal"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listReporteDiario": {
+   "id": "communicationchannel.listReporteDiario",
+   "path": "reportediario/{idObra}/{email}",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "email": {
+     "type": "string",
+     "required": true,
+     "location": "path"
+    },
+    "idObra": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "parameterOrder": [
+    "idObra",
+    "email"
+   ],
+   "response": {
+    "$ref": "CollectionResponse_ReporteDiario"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listReportsmodel": {
+   "id": "communicationchannel.listReportsmodel",
+   "path": "reportsmodel/{idProyecto}/{idObra}",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "idObra": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    },
+    "idProyecto": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "parameterOrder": [
+    "idProyecto",
+    "idObra"
+   ],
+   "response": {
+    "$ref": "CollectionResponse_Reportsmodel"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listSincronizacion": {
+   "id": "communicationchannel.listSincronizacion",
+   "path": "sincronizacion",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "response": {
+    "$ref": "CollectionResponse_Sincronizacion"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listUbicaciones": {
+   "id": "communicationchannel.listUbicaciones",
+   "path": "ubicaciones",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "response": {
+    "$ref": "CollectionResponse_Ubicaciones"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listUsuario": {
+   "id": "communicationchannel.listUsuario",
+   "path": "usuario",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "response": {
+    "$ref": "CollectionResponse_Usuario"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "listXmpp": {
+   "id": "communicationchannel.listXmpp",
+   "path": "xmpp",
+   "httpMethod": "GET",
+   "parameters": {
+    "cursor": {
+     "type": "string",
+     "location": "query"
+    },
+    "limit": {
+     "type": "integer",
+     "format": "int32",
+     "location": "query"
+    }
+   },
+   "response": {
+    "$ref": "CollectionResponse_Xmpp"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeAditivas_Deductivas": {
+   "id": "communicationchannel.removeAditivas_Deductivas",
+   "path": "aditivas_deductivas/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeAvance_Financiero": {
+   "id": "communicationchannel.removeAvance_Financiero",
+   "path": "avance_financiero/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeAvance_Fisico": {
+   "id": "communicationchannel.removeAvance_Fisico",
+   "path": "avance_fisico/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeCat_Contactos": {
+   "id": "communicationchannel.removeCat_Contactos",
+   "path": "cat_contactos/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeCat_Personal": {
+   "id": "communicationchannel.removeCat_Personal",
+   "path": "cat_personal/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeCat_Tipo_Empresa": {
+   "id": "communicationchannel.removeCat_Tipo_Empresa",
+   "path": "cat_tipo_empresa/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeCat_Tipo_Maquinaria": {
+   "id": "communicationchannel.removeCat_Tipo_Maquinaria",
+   "path": "cat_tipo_maquinaria/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeCat_Tipo_Presona": {
+   "id": "communicationchannel.removeCat_Tipo_Presona",
+   "path": "cat_tipo_presona/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeConcepto": {
+   "id": "communicationchannel.removeConcepto",
+   "path": "concepto/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeDeviceInfo": {
+   "id": "communicationchannel.removeDeviceInfo",
+   "path": "deviceinfo/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeDirectivo_Proyecto": {
+   "id": "communicationchannel.removeDirectivo_Proyecto",
+   "path": "directivo_proyecto/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeDirectorio": {
+   "id": "communicationchannel.removeDirectorio",
+   "path": "directorio/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeEmpresa": {
+   "id": "communicationchannel.removeEmpresa",
+   "path": "empresa/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeEstimacion": {
+   "id": "communicationchannel.removeEstimacion",
+   "path": "estimacion/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeMaquinaria": {
+   "id": "communicationchannel.removeMaquinaria",
+   "path": "maquinaria/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeMultimedia": {
+   "id": "communicationchannel.removeMultimedia",
+   "path": "multimedia/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeNotas": {
+   "id": "communicationchannel.removeNotas",
+   "path": "notas/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeObra": {
+   "id": "communicationchannel.removeObra",
+   "path": "obra/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeOrg_Goubernamental": {
+   "id": "communicationchannel.removeOrg_Goubernamental",
+   "path": "org_goubernamental/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removePersona": {
+   "id": "communicationchannel.removePersona",
+   "path": "persona/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removePrograma": {
+   "id": "communicationchannel.removePrograma",
+   "path": "programa/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeProyecto": {
+   "id": "communicationchannel.removeProyecto",
+   "path": "proyecto/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removePush": {
+   "id": "communicationchannel.removePush",
+   "path": "push/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeRef_calendarizacion": {
+   "id": "communicationchannel.removeRef_calendarizacion",
+   "path": "ref_calendarizacion/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeRepMaquinariaCatMaquinaria": {
+   "id": "communicationchannel.removeRepMaquinariaCatMaquinaria",
+   "path": "repmaquinariacatmaquinaria/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeRepoPersonalCatPersonal": {
+   "id": "communicationchannel.removeRepoPersonalCatPersonal",
+   "path": "repopersonalcatpersonal/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeReporteDiario": {
+   "id": "communicationchannel.removeReporteDiario",
+   "path": "reportediario/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeReportsmodel": {
+   "id": "communicationchannel.removeReportsmodel",
+   "path": "reportsmodel/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeSincronizacion": {
+   "id": "communicationchannel.removeSincronizacion",
+   "path": "sincronizacion/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeUbicaciones": {
+   "id": "communicationchannel.removeUbicaciones",
+   "path": "ubicaciones/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeUsuario": {
+   "id": "communicationchannel.removeUsuario",
+   "path": "usuario/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "removeXmpp": {
+   "id": "communicationchannel.removeXmpp",
+   "path": "xmpp/{id}",
+   "httpMethod": "DELETE",
+   "parameters": {
+    "id": {
+     "type": "string",
+     "required": true,
+     "format": "int64",
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "id"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "sendMessage": {
+   "id": "communicationchannel.sendMessage",
+   "path": "sendMessage/{message}",
+   "httpMethod": "POST",
+   "parameters": {
+    "message": {
+     "type": "string",
+     "required": true,
+     "location": "path"
+    }
+   },
+   "parameterOrder": [
+    "message"
+   ],
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateAditivas_Deductivas": {
+   "id": "communicationchannel.updateAditivas_Deductivas",
+   "path": "aditivas_deductivas",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Aditivas_Deductivas",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Aditivas_Deductivas"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateAvance_Financiero": {
+   "id": "communicationchannel.updateAvance_Financiero",
+   "path": "avance_financiero",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Avance_Financiero",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Avance_Financiero"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateAvance_Fisico": {
+   "id": "communicationchannel.updateAvance_Fisico",
+   "path": "avance_fisico",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Avance_Fisico",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Avance_Fisico"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateCat_Contactos": {
+   "id": "communicationchannel.updateCat_Contactos",
+   "path": "cat_contactos",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Cat_Contactos",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Cat_Contactos"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateCat_Personal": {
+   "id": "communicationchannel.updateCat_Personal",
+   "path": "cat_personal",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Cat_Personal",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Cat_Personal"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateCat_Tipo_Empresa": {
+   "id": "communicationchannel.updateCat_Tipo_Empresa",
+   "path": "cat_tipo_empresa",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Cat_Tipo_Empresa",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Cat_Tipo_Empresa"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateCat_Tipo_Maquinaria": {
+   "id": "communicationchannel.updateCat_Tipo_Maquinaria",
+   "path": "cat_tipo_maquinaria",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Cat_Tipo_Maquinaria",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Cat_Tipo_Maquinaria"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateCat_Tipo_Presona": {
+   "id": "communicationchannel.updateCat_Tipo_Presona",
+   "path": "cat_tipo_presona",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Cat_Tipo_Presona",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Cat_Tipo_Presona"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateConcepto": {
+   "id": "communicationchannel.updateConcepto",
+   "path": "concepto",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Concepto",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Concepto"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateDeviceInfo": {
+   "id": "communicationchannel.updateDeviceInfo",
+   "path": "deviceinfo",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "DeviceInfo",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "DeviceInfo"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateDirectivo_Proyecto": {
+   "id": "communicationchannel.updateDirectivo_Proyecto",
+   "path": "directivo_proyecto",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Directivo_Proyecto",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Directivo_Proyecto"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateDirectorio": {
+   "id": "communicationchannel.updateDirectorio",
+   "path": "directorio",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Directorio",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Directorio"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateEmpresa": {
+   "id": "communicationchannel.updateEmpresa",
+   "path": "empresa",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Empresa",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Empresa"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateEstimacion": {
+   "id": "communicationchannel.updateEstimacion",
+   "path": "estimacion",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Estimacion",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Estimacion"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateMaquinaria": {
+   "id": "communicationchannel.updateMaquinaria",
+   "path": "maquinaria",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Maquinaria",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Maquinaria"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateMultimedia": {
+   "id": "communicationchannel.updateMultimedia",
+   "path": "multimedia",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Multimedia",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Multimedia"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateNotas": {
+   "id": "communicationchannel.updateNotas",
+   "path": "notas",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Notas",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Notas"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateObra": {
+   "id": "communicationchannel.updateObra",
+   "path": "obra",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Obra",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Obra"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateOrg_Goubernamental": {
+   "id": "communicationchannel.updateOrg_Goubernamental",
+   "path": "org_goubernamental",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Org_Goubernamental",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Org_Goubernamental"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updatePersona": {
+   "id": "communicationchannel.updatePersona",
+   "path": "persona",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Persona",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Persona"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updatePrograma": {
+   "id": "communicationchannel.updatePrograma",
+   "path": "programa",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Programa",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Programa"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateProyecto": {
+   "id": "communicationchannel.updateProyecto",
+   "path": "proyecto",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Proyecto",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Proyecto"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updatePush": {
+   "id": "communicationchannel.updatePush",
+   "path": "push",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Push",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Push"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateRef_calendarizacion": {
+   "id": "communicationchannel.updateRef_calendarizacion",
+   "path": "ref_calendarizacion",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Ref_calendarizacion",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Ref_calendarizacion"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateRepMaquinariaCatMaquinaria": {
+   "id": "communicationchannel.updateRepMaquinariaCatMaquinaria",
+   "path": "repmaquinariacatmaquinaria",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "RepMaquinariaCatMaquinaria",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "RepMaquinariaCatMaquinaria"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateRepoPersonalCatPersonal": {
+   "id": "communicationchannel.updateRepoPersonalCatPersonal",
+   "path": "repopersonalcatpersonal",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "RepoPersonalCatPersonal",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "RepoPersonalCatPersonal"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateReporteDiario": {
+   "id": "communicationchannel.updateReporteDiario",
+   "path": "reportediario",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "ReporteDiario",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "ReporteDiario"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateReportsmodel": {
+   "id": "communicationchannel.updateReportsmodel",
+   "path": "reportsmodel",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Reportsmodel",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Reportsmodel"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateSincronizacion": {
+   "id": "communicationchannel.updateSincronizacion",
+   "path": "sincronizacion",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Sincronizacion",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Sincronizacion"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateUbicaciones": {
+   "id": "communicationchannel.updateUbicaciones",
+   "path": "ubicaciones",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Ubicaciones",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Ubicaciones"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateUsuario": {
+   "id": "communicationchannel.updateUsuario",
+   "path": "usuario",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Usuario",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Usuario"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  },
+  "updateXmpp": {
+   "id": "communicationchannel.updateXmpp",
+   "path": "xmpp",
+   "httpMethod": "PUT",
+   "request": {
+    "$ref": "Xmpp",
+    "parameterName": "resource"
+   },
+   "response": {
+    "$ref": "Xmpp"
+   },
+   "scopes": [
+    "https://www.googleapis.com/auth/userinfo.email"
+   ]
+  }
+ }
+}

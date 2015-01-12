@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+  <script src="jquery-1.9.0.min.js"></script>
+
+
+</head>
+<body >
+<script type="text/javascript">
+function init2(){
+alert("llegue al init2");
+var ROOT = 'https://1-dot-prueba-xmpp-2.appspot.com/_ah/api';
+	// // {
+    // "client": {},
+      // "googleapis.config": {
+        // root: ROOT
+      // }
+   // //}
+	 //Consultar EndPoint 
+	 var loadAreaPoligonal = gapi.client.load('communicationchannel','v1',function(){
+												// gapi.client.communicationchannel.insertDeviceInfo(prueba[1]).execute(function(resp){
+													gapi.client.communicationchannel.listUsuario().execute(function(resp){
+													window.alert(resp);
+													//manageAreasPoligonales(resp);
+													//ArrConceptos = resp.items;
+												
+													//cantidad_elementos=resp.items.length;
+												
+													
+												
+													
+												});
+											}, ROOT);
+}
+
+</script>
+ <script src="/js/respaldo.js"></script>
+  
+  <script src="https://apis.google.com/js/client.js?onload=inicia2"></script>
+    
+</body>
+</html>

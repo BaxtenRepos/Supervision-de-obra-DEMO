@@ -1,0 +1,158 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Separator info obra -->
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+    
+    <!-- RegisterActivity -->
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    
+    <style name="stl_titulo_logo">
+        <item name="android:textSize">10pt</item>
+        <item name="android:textColor">#216285</item>
+    </style>
+    
+    <!-- Grag Informacion Obra -->
+    <style name="stl_datos_obras_titulo">
+        <item name="android:textSize">10pt</item>
+        <item name="android:gravity">right</item>
+    </style>
+     <style name="stl_datos_obras_cabecera">
+        <item name="android:textSize">12pt</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="stl_datos_obras_valor">
+        <item name="android:textSize">9pt</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+    <style name="stl_datos_obra_avances">
+        <item name="android:textSize">10pt</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    
+    
+    <!-- List Conceptos -->
+    <style name="stl_list_conceptos">
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:divider">@drawable/separador</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+    
+     <!-- List Obras -->
+    <style name="stl_list_obras">
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:divider">@drawable/separador</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+    
+    <style name="PhotoGridLayout">
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="android:listSelector">@drawable/photogrid_list_selector</item>
+    </style>
+
+    <!-- the theme applied to the application or activity -->
+    <style name="CustomActionBarTheme" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">#216285</item>
+    </style>
+
+    <style name="TextView">
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/background_dark</item>
+        <item name="android:textSize">7pt</item>
+    </style>
+    
+    <!-- Lista Obra style -->
+    
+    <style name="txv_obra_empresa_contratista">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+    
+     <style name="txv_obra_porcentaje">
+        <item name="android:layout_gravity">left</item>
+       	<item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/background_dark</item>
+        <item name="android:textSize">7pt</item>
+         <item name="android:textStyle">bold</item>
+    </style>
+    <style name="txv_obra_porcentaje_desvio">
+        <item name="android:layout_gravity">left</item>
+       	<item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/holo_red_light</item>
+        <item name="android:textSize">7pt</item>
+         <item name="android:textStyle">bold</item>
+    </style>
+    
+     <style name="txv_obra_porcentaje_nombre">
+        <item name="android:layout_gravity">left</item>
+       	<item name="android:gravity">center</item>
+        <item name="android:textColor">@color/azul</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+    
+  	<style name="txv_obra_nombre">
+  	    <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+  	<!-- Lista Obra style -->
+  	
+	<style name="lyt_avanceConcepto_LienearLayout">
+	    <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:orientation">vertical</item>
+  	    <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:background">@color/blanco</item>  
+    </style>
+    
+	<style name="txv_avanceConcepto_texview1">
+	    <item name="android:gravity">right</item>
+        <item name="android:layout_marginLeft">37dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">7pt</item> 
+    </style>
+    
+	<style name="txv_avanceConcepto_texview2">
+	    <item name="android:gravity">right</item>
+        <item name="android:layout_marginLeft">37dp</item>
+        <item name="android:textStyle">italic</item> 
+        <item name="android:textSize">7pt</item>
+    </style>
+    
+	<style name="txv_avanceConcepto_texview3">
+	    <item name="android:gravity">right</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textStyle">italic</item> 
+        <item name="android:textSize">7pt</item>
+    </style>
+    
+  	
+              
+   
+</resources>
