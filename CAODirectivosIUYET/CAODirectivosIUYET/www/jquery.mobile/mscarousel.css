@@ -1,0 +1,7 @@
+.mscarousel {overflow:hidden}
+.mscarousel img{border:0}
+.mscarousel .child{position:relative;}
+.mscarousel .child .set, .mscarousel .set{float:left; position:relative;}
+.mscarousel .child .set .descripcion, .mscarousel .set .descripcion{/*position:absolute; top:0; left:0; background-color:#333333; color:#fff;*/}
+.mscarousel .child .clear{clear:both}
+.hand{cursor:pointer}
